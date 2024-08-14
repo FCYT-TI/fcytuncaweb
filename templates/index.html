@@ -1,0 +1,747 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>FCYT | UNCA</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static "img/favicon.png" %}" rel="icon">
+  <link href="{% static "img/apple-touch-icon.png" %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static "vendor/aos/aos.css" %}" rel="stylesheet">
+  <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+  <link href="{% static "vendor/bootstrap-icons/bootstrap-icons.css" %}" rel="stylesheet">
+  <link href="{% static "vendor/glightbox/css/glightbox.min.css" %}" rel="stylesheet">
+  <link href="{% static "vendor/remixicon/remixicon.css" %}" rel="stylesheet">
+  <link href="{% static "vendor/swiper/swiper-bundle.min.css" %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static "css/style.css" %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="{% static "img/logofcytunca.png" %}" alt="">
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero"><i style="font-size: 20px;" class="bi bi-house"></i></a></li>
+          <li class="dropdown"><a href="#"><span>Institucional</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Reseña Histórica</a></li>
+              <li><a href="#">Mision, Vision y Valores</a></li>
+              <li><a href="#">Autoridades</a></li>
+              <li><a href="#">Consejo Directivo</a></li>
+                <li><a href="#">Resolusiones</a></li>
+                <li><a href="#">Identidad</a></li>
+                <li><a href="#">Organigrama</a></li>
+                <li><a href="#">Acuerdo y Convenios</a></li>
+                <li><a href="#">Dependencias</a></li>
+                <li><a href="#">Politicas y Reglamentos</a></li>
+                <li><a href="#">Marco Legal</a></li>
+            </ul>
+          </li>
+            <li class="dropdown"><a href="#"><span>Academico</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Aranceles</a></li>
+              <li><a href="#">Calendario Academico</a></li>
+              <li><a href="#">Guia Academica</a></li>
+                <li><a href="#">Reglamento Academico</a></li>
+              <li><a href="#">Horarios de Clases y Examenes</a></li>
+                <li><a href="#">Bienestar Estudiantil</a></li>
+                <li><a href="#">Mobilidad Academica y Pasantia</a></li>
+                <li><a href="#">Concurso Docente</a></li>
+            </ul>
+          </li>
+            <li class="dropdown"><a href="#"><span>Carreras</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Ingenieria en Sistemas Informaticos</a></li>
+              <li><a href="#">Ingenieria en Electronica</a></li>
+              <li><a href="#">Ingenieria en Electricidad</a></li>
+              <li><a href="#">Ingenieria Civil</a></li>
+                <li><a href="#">Postgrado</a></li>
+            </ul>
+          </li>
+            <li class="dropdown"><a href="#"><span>Admision</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Examenes de Admision</a></li>
+              <li><a href="#">Resultados de Examenes de Admision</a></li>
+              <li><a href="#">Lista de Ingresantes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Extension</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Extension Universitaria</a></li>
+              <li><a href="#">Reglamentos de Extesion Universitaria</a></li>
+            </ul>
+          </li>
+            <li class="dropdown"><a href="#"><span>Investigacion</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li><a href="#">Drop Down 1</a></li>
+                <li><a href="#">Drop Down 1</a></li>
+                <li><a href="#">Drop Down 1</a></li>
+                <li><a href="#">Drop Down 1</a></li>
+            </ul>
+          </li>
+            <li class="dropdown"><a href="#"><span>Transparencia </span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Ley Nº 5189/2014</a></li>
+              <li><a href="#">MECIP</a> </li>
+            </ul>
+          </li>
+
+
+          <!--<li><a class="getstarted scrollto" href="#about">Get Started</a></li>-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="carousel-section">
+  <div class="carousel d-flex align-items-center">
+    <a data-aos="fade-up" href="#" class="btnNext d-inline-flex position-absolute z-2 top-50 end-0 translate-middle-y"><i class="bi bi-chevron-compact-right fs-1"></i></a>
+    <a data-aos="fade-up" href="#" class="btnPrevius d-inline-flex position-absolute z-2"><i class="bi bi-chevron-compact-left fs-1"></i></a>
+    <div class="carousel-image d-flex align-items-center fade">
+      <img class="imgGradient position-absolute z-1" src="{% static 'img/Deep SpaceLeft.jpg' %}" alt="">
+      <div class="div-carrusel position-absolute z-1 text-light mb-2">
+        <h1 data-aos="fade-up"><strong>Carreras de Grado</strong></h1><h4 data-aos="fade-up">con la FCYT|UNCA</h4>
+        <p data-aos="fade-up" data-aos-delay="400">Formar profesionales excelentes <br> con conocimientos científicos y tecnológicos, <br>
+           competentes, con sentido crítico, ético y responsabilidad social.</h3>
+        <div data-aos="fade-up" data-aos-delay="600">
+          <div class="text-center d-flex justify-content-start z-2">
+            <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+              <span>Estudiar en la FCYT</span>
+              <i class="bi bi-arrow-right arrow-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <img class="z-0" src="{% static 'img/herofcyt.jpg' %}" alt="">
+    </div>
+    <div class="carousel-image d-flex align-items-center fade">
+      <img class="imgGradient position-absolute z-1" src="{% static 'img/Deep SpaceRight.jpg'  %}" alt="">
+      <div id="carruselLeft" class="div-carrusel position-absolute z-1 text-light mb-5 top-50 end-0 translate-middle-y text-end">
+        <h1 data-aos="fade-up"><strong>Admisión FCYT|UNCA</strong></h1><h4>Agosto 2024</h4>
+        <p data-aos="fade-up" data-aos-delay="400">Exámenes de Admisión a Carreras de Grado de la FCYT|UNCA 2024</p>
+        <div data-aos="fade-up" data-aos-delay="600">
+          <div class="text-center d-flex justify-content-end z-2">
+            <a href="#about" id="btnCarouselInfo" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+              <i class="bi bi-info-circle info-icon"></i>
+              <span class="ms-2">Información</span>
+            </a>
+            <a href="#about" id="btnCarouselResult" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center ms-2">
+              <span class="ms-2">Resultados</span>
+              <i class="bi bi-arrow-right arrow-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+        <img src="{% static 'img/blog/blog-2.jpg' %}" alt="">
+    </div>
+    <div class="carousel-image d-flex align-items-center fade">
+      <img class="imgGradient position-absolute z-1" src="{% static 'img/Deep SpaceLeft.jpg'  %}" alt="">
+      <div class="div-carrusel position-absolute z-1 text-light mb-2">
+        <h1 data-aos="fade-up"><strong>Conviértete en Líder</strong></h1>
+        <p data-aos="fade-up" data-aos-delay="400">Los mejores profesionales de Alto nivel<br>
+        <div data-aos="fade-up" data-aos-delay="600">
+          <div class="text-center d-flex justify-content-start z-2">
+            <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+              <span>Diplomados</span>
+              <i class="bi bi-arrow-right arrow-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+        <img src="{% static 'img/herodiplooo.jpg' %}" alt="">
+    </div>
+</div>
+</section><!-- End Hero -->
+
+
+  <main id="main">
+
+          <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <!--<i class="bi bi-emoji-smile"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Happy Clients</p>
+              </div>-->
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <!--<i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Projects</p>
+              </div>-->
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <!--<i class="bi bi-headset" style="color: #15be56;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Hours Of Support</p>
+              </div>-->
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <!--<i class="bi bi-people" style="color: #bb0852;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Hard Workers</p>
+              </div>-->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+      <section id="features" class="features">
+          <div class="container" data-aos="fade-up">
+              <!-- Feature Icons -->
+        <div class="row feature-icons" data-aos="fade-up">
+          <h3>ACCESOS RÁPIDOS</h3><br><br>
+
+          <br><br><div class="row"><br>
+
+            <!--<div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
+              <img src="{% static "img/features-3.png" %}" class="img-fluid p-4" alt="">
+            </div>-->
+
+            <div class="col-sm d-flex content">
+              <div class="row align-self-center gy-4">
+
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="ri-line-chart-line"></i>
+                  <div>
+                    <h4>Portal Academico</h4>
+                    <p>Consulta tu estado académico en el siguiente enlace, como también horas de extensión,
+                        investigación y tu proceso académico.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="ri-inbox-2-line"></i>
+                  <div>
+                    <h4>Buzón de Sugerencias</h4>
+                    <p>Remite tus opiniones y quejas con respecto a la institución en este apartado.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="ri-file-pdf-2-line"></i>
+                  <div>
+                    <h4>Plan Estrategico Institucional</h4>
+                    <p>Consulta el plan estrategico institucional</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="ri-folder-2-line"></i>
+                  <div>
+                    <h4>Repositorio Academico</h4>
+                    <p>Consulta de Repositorio Academico de la FCYT</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="ri-link"></i>
+                  <div>
+                    <h4>Encuesta de Satisfaccion del Usuario</h4>
+                    <p>Consulta de encuesta de satisfaccion del usuario.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                  <i class="ri-briefcase-4-line"></i>
+                  <div>
+                    <h4>Bolsa de Trabajo</h4>
+                    <p>Visualiza tu proximo empleo.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div><!-- End Feature Icons -->
+
+          </div>
+
+      </section>
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about py-5 bg-light">
+  <div class="container" id="usabout" data-aos="fade-up">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="image-wrapper position-relative">
+          <img src="{% static 'img/dipomafcyt2.jpg' %}" alt="" class="img-fluid rounded shadow">
+          <div class="overlay-content position-absolute top-50 start-50 translate-middle text-center p-4 bg-dark bg-opacity-50 rounded">
+            <h3 class="text-white">Nuestra Oferta Académica</h3>
+            <h2 class="text-white">CONOCE NUESTROS DIPLOMADOS</h2>
+            <div class="text-center text-lg-start mt-4" id="btndiplomas">
+              <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Ver más</span>
+                <i class="bi bi-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End About Section -->
+
+    <!-- ======= Values Section ======= -->
+    <section id="values" class="values">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <!--<h2>Our Values</h2>-->
+          <p>Sección de AVISOS</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="box">
+              <img src="{% static "img/DIPLO.jpg" %}" class="img-fluid" alt="">
+              <h3>Diplomado en Fiscalización</h3>
+              <p>Inscribite al Diplomado en Fiscalizacion de Obras Publicas</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <img src="{% static "img/TALLER.jpg" %}" class="img-fluid" alt="">
+              <h3>Curso Taller</h3>
+              <p>Inscribite al Curso Taller de Diseño, Gestion y Evaluacion de Proyectos de Interes Publico</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+            <div class="box">
+              <img src="{% static "img/admisss.jpg" %}" class="img-fluid" alt="">
+              <h3>Curso de Admisión</h3>
+              <p>Inscribite al curso de admision para las distintas carreras de la FCYT</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Values Section -->
+          <!-- ======= Recent Blog Posts Section ======= -->
+    <section id="recent-blog-posts" class="recent-blog-posts">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <!--<h2>Blog</h2>-->
+          <p>Últimas Noticias de la FCYT | UNCA</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="post-box">
+              <div class="post-img"><img src="{% static "img/blog/blog-1.jpg" %}" class="img-fluid" alt=""></div>
+              <span class="post-date">Mar, Julio 02</span>
+              <h3 class="post-title">La FCyT presenta a 25 Nuevos Ingenieros</h3>
+              <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Leer Más</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="post-box">
+              <div class="post-img"><img src="{% static "img/blog/COMUNICADO_-_P._COV._2025_ADMISION.jpeg" %}" class="img-fluid" alt=""></div>
+              <span class="post-date">Lun, Junio 27</span>
+              <h3 class="post-title">Aviso Importante para postulantes a la Primera Convocatoria del Curso de Admisión 2025!</h3>
+              <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Leer Más</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="post-box">
+              <div class="post-img"><img src="{% static "img/blog/Ing._Alfredo_Moreno_y_Dr_Hernan_Avalos.jpg" %}" class="img-fluid" alt=""></div>
+              <span class="post-date">Mie, Febrero 21</span>
+              <h3 class="post-title">FIRMA DE CONVENIO MARCO DE COOPERACION INTERINSTITUCIONAL ENTRE LA FO UNCA Y LA FCYT UNCA.</h3>
+              <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Leer Más</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Recent Blog Posts Section -->
+
+
+
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <!--<h2>Our Clients</h2>-->
+          <p>Alianzas y Convenios</p>
+        </header>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="{% static "img/clients/FCO.png" %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static "img/clients/04.-FCSPyH-300x300.png" %} " class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static "img/clients/fce.png" %} " class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static "img/clients/FCM.png" %} " class="img-fluid" alt=""></div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+    </section><!-- End Clients Section -->
+
+
+
+          <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <!--<h2>F.A.Q</h2>-->
+          <p>Preguntas Frecuentes</p>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- F.A.Q List 1-->
+            <div class="accordion accordion-flush" id="faqlist1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    Non consectetur a erat nam at lectus urna duis?
+                  </button>
+                </h2>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                  </button>
+                </h2>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                  </button>
+                </h2>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+
+            <!-- F.A.Q List 2-->
+            <div class="accordion accordion-flush" id="faqlist2">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
+                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                  </button>
+                </h2>
+                <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
+                    Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                  </button>
+                </h2>
+                <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
+                    Varius vel pharetra vel turpis nunc eget lorem dolor?
+                  </button>
+                </h2>
+                <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End F.A.Q Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <!--<h2>Contacto</h2>-->
+          <p>Contáctanos</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Dirección</h3>
+                  <p>Sargento Florentino Benítez
+                <br>& Padre Molas, 3300<br>
+                Cnel. Oviedo - Paraguay</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Llamános al</h3>
+                  <p>+595 521 201 548</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email </h3>
+                  <p>info@fctunca.edu.py</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-clock"></i>
+                  <h3>Horario de Atención</h3>
+                  <p>Lunes a Viernes<br>07:00HS - 22:00HS</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Nombre y Apellido" required>
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Asunto" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Enviar Mensaje</button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <h4>Boletín Informativo</h4>
+            <p>No te pierdas las últimas novedades de la FCYT.</p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscríbete">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <!--<img src="{% static "" %}" alt="">-->
+              <span>FCYT | UNCA </span>
+            </a><br>
+            <p>Creada el 17 de noviembre de 2009, mediante Resolución Nº 86/2009 del Consejo Superior Universitario de la Universidad Nacional de Caaguazú</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-envelope"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Enlaces de Interes</h4>
+            <!--<ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>-->
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Servicios</h4>
+            <!--<ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>-->
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contacto</h4>
+            <p>
+              Sargento Florentino Benítez
+                <br>& Padre Molas, 3300<br>
+                Cnel. Oviedo - Paraguay<br><br>
+              <strong>Teléfono:</strong> +595 521 201 548<br>
+              <strong>Email:</strong> info@fctunca.edu.py<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>FCYT|UNCA 2024</span></strong>. Todos los Derechos Reservados
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static "vendor/purecounter/purecounter_vanilla.js" %}"></script>
+  <script src="{% static "vendor/aos/aos.js" %}"></script>
+  <script src="{% static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
+  <script src="{% static "vendor/glightbox/js/glightbox.min.js" %}"></script>
+  <script src="{% static "vendor/isotope-layout/isotope.pkgd.min.js" %}"></script>
+  <script src="{% static "vendor/swiper/swiper-bundle.min.js" %}"></script>
+  <script src="{% static "vendor/php-email-form/validate.js" %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static "js/main.js" %}"></script>
+
+</body>
+
+</html>
