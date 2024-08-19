@@ -74,12 +74,25 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #f0f0f0;
-  min-height: 40px;
-  margin-top: 82px;
+  margin-top: 120px;
+  margin-left: 15px;
   color: #fff;
+  margin-bottom: 20px !important;
 }
-
+.tittle{
+    background: #f0f0f0;
+    margin-top: 20px;
+    padding:20px 0 20px 0;
+}
+.breadInicio{
+  color: #006fdd;
+}
+.breadMenu{
+  color: #006fdd;
+}
+.breadSeccion{
+  color: black;
+}
 @media (max-width: 992px) {
   .breadcrumbs {
     margin-top: 57px;
@@ -101,7 +114,6 @@ section {
 }
 
 .breadcrumbs ol a {
-  color: #fff;
   transition: 0.3s;
 }
 
@@ -2552,11 +2564,17 @@ section {
 }
 
 .container-titulo{
-  padding: 50px 0 30px 0;
-  margin-left: 85px;
+  padding: 50px 0 50px 0;
+  margin-left: 165px;
+}
+.container-titulo h1{
+  margin-bottom: 0 !important;
 }
 .containerText{
   margin: auto;
-  width: 88%;
+  width: 65%;
   text-align: justify;
+}
+.container{
+  margin-left: 95px;
 }
