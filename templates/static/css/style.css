@@ -2560,3 +2560,192 @@ section {
   width: 88%;
   text-align: justify;
 }
+
+/*--------------------------------------------------------------
+# Tables
+--------------------------------------------------------------*/
+
+/* Contenedor principal de la tabla */
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+
+}
+.center-wrapper, .table {
+    border: none;
+    box-shadow: none;
+}
+
+main.table {
+    width: 82vw;
+    height: auto;
+    margin-top: 120px;
+}
+
+/* Encabezado de la tabla */
+.table__header {
+    width: 100%;
+    height: 10%;
+    padding: .8rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Grupo de entrada para la búsqueda */
+.table__header .input-group {
+    width: 35%;
+    height: 50px;
+    background-color: #fff5;
+    padding: 0 .8rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    transition: .2s;
+}
+
+.table__header .input-group:hover {
+    width: 45%;
+    background-color: #fff8;
+    box-shadow: 0 .1rem .4rem #0002;
+}
+
+/* Estilo del input de búsqueda */
+.table__header .input-group input {
+    width: 100%;
+    padding: 0 .5rem 0 .3rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    min-width: 200px;
+}
+
+/* Cuerpo de la tabla con desplazamiento */
+.table__body {
+    padding: 0;
+    max-height: 510px;
+    width: 95%;
+    margin: .8rem auto;
+    overflow: auto;
+}
+
+/* Estilo de la barra de desplazamiento */
+.table__body::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table__body::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.table__body:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+/* Configuración de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: center;
+    min-width: 10rem;
+}
+
+td i {
+    font-size: 24px; /* Tamaño del ícono */
+    font-weight: bold; /* Grosor del ícono */
+}
+
+/* Encabezado de la tabla */
+thead th {
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    text-transform: capitalize;
+    background: white;
+}
+
+/* Alternar color de fondo en filas impares */
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+
+/* Transiciones en filas */
+tbody tr {
+    --delay: .1s;
+    transition: .5s ease-in-out var(--delay), background-color 0s;
+}
+
+tbody tr.hide {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+tbody tr:hover {
+    background-color: #fff6 !important;
+}
+
+/* Transiciones en celdas */
+tbody tr td, tbody tr td p, tbody tr td {
+    transition: .2s ease-in-out;
+}
+
+tbody tr.hide td, tbody tr.hide td p {
+    padding: 0;
+    font: 0 / 0 sans-serif;
+    transition: .2s ease-in-out .5s;
+}
+
+tbody tr.hide td {
+    width: 0;
+    height: 0;
+    transition: .2s ease-in-out .5s;
+}
+
+
+/* Adaptación para pantallas más pequeñas */
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+}
+
+/* Flecha de ordenamiento en el encabezado */
+thead th span.icon-arrow {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    border: 1.4px solid transparent;
+    text-align: center;
+    font-size: 1rem;
+    margin-left: .5rem;
+    transition: .2s ease-in-out;
+}
+
+thead th:hover span.icon-arrow {
+    border: 1.4px solid #006fdd;
+}
+
+thead th:hover {
+    color: #006fdd;
+}
+
+thead th.active span.icon-arrow {
+    background-color: #006fdd;
+    color: #fff;
+}
+
+thead th.asc span.icon-arrow {
+    transform: rotate(180deg);
+}
+
+thead th.active, tbody td.active {
+    color: #006fdd;
+}
