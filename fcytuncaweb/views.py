@@ -9,3 +9,6 @@ def raiz(request):
 
 def resenha(request):
     return render(request, 'resenhahistorica.html')
+
+def consejo(request):
+    return render(request, 'consejo.html')
