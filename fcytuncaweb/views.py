@@ -9,3 +9,7 @@ def raiz(request):
 
 def resenha(request):
     return render(request, 'resenhahistorica.html')
+
+
+def acuerdos(request):
+    return render(request, 'acuerdosconvenios.html')
