@@ -2566,7 +2566,7 @@ section {
   padding: 20px 0 20px 0;
   margin-left: 165px;
 }
-.container-titulo h4{
+.container-titulo h1{
   margin-bottom: 0 !important;
 }
 .containerText{
@@ -2714,4 +2714,26 @@ section {
    }
 
 }
-  
+
+
+
+/*Consejo Directivo*/
+
+#Titutlo-Consejo {
+    text-align: center;
+}
+
+ #container-consejo {
+      margin: 0;
+  }
+
+ .centered-section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+}
+ .team .member .member-info p.consejo-contenido {
+  font-style: normal;
+}
