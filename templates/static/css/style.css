@@ -2954,4 +2954,5 @@ thead th.active, tbody td.active {
 
 .custom-testimonial-items{
   padding: 0 !important;
+  border-radius: 40px 40px 0 0 !important;
 }
