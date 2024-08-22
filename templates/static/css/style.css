@@ -1432,10 +1432,7 @@ section {
 --------------------------------------------------------------*/
 .team {
   background: #fff;
-  align-items: center;
-  text-align: center;
   padding: 60px 0;
-  justify-content: center;
 }
 
 .team .member {
@@ -1540,7 +1537,13 @@ section {
     display: flex;
     justify-content: center;
 }
-
+.team-consejo {
+  background: #fff;
+  align-items: center;
+  text-align: center;
+  padding: 60px 0;
+  justify-content: center;
+}
 
 /*--------------------------------------------------------------
 # Clients
