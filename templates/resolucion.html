@@ -1,101 +1,117 @@
 {% load static %}
 {% include "header.html" %}
-<div class="center-wrapper">
-    <main class="table" id="customers_table">
-        <section class="table__header">
-            <h1>Resoluciones</h1>
-            <div class="input-group">
-                <input type="search" placeholder="Search Data...">
-            </div>
-        </section>
-        <section class="table__body">
-            <table>
-                <thead>
-                <tr>
-                    <th> Numero <span class="icon-arrow">&UpArrow;</span></th>
-                    <th> Título <span class="icon-arrow">&UpArrow;</span></th>
-                    <th> Descripción <span class="icon-arrow">&UpArrow;</span></th>
-                    <th> Institución <span class="icon-arrow">&UpArrow;</span></th>
-                    <th> Fecha <span class="icon-arrow">&UpArrow;</span></th>
-                    <th> Enlace</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td> 70</td>
-                    <td>Horario de Atención al Público en Perceptoria</td>
-                    <td> Por la cual se aprueba la modificación del horario de atención al público en perceptoria de la
-                        Facultad de Ciencias y Tecnologias de la Universidad Nacional de Caaguazu
-                    </td>
-                    <td> FCyT</td>
-                    <td> 03 julio, 2017</td>
-                    <td>
-                        <a href="#" download>
-                            <i class="bi bi-download"></i>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td> 33</td>
-                    <td>Reglamento de Exoneración de Aranceles</td>
-                    <td>Por la cual se aprueba el reglamento de Concesión de Exoneración de Aranceles de la Facultad de
-                        Ciencias y Tecnologias de la Universidad Nacional de Caaguazu
-                    </td>
-                    <td> FCyT</td>
-                    <td> 13 marzo, 2017</td>
-                    <td>
-                        <a href="#" download>
-                            <i class="bi bi-download"></i>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td> 71</td>
-                    <td>Aprobación de Proyecto presentado por la Dirección Academica</td>
-                    <td> Por la cual se aprueba el proyecto presentado por la Dirección Académica de la Facultad de
-                        Ciencias y Tecnologías - UNC@ con la relación al Cursillo Probatorio de Ingreso para el Periodo
-                        2016 - 2017
-                    </td>
-                    <td>FCyT</td>
-                    <td> 11 julio, 2016</td>
-                    <td>
-                        <a href="#" download>
-                            <i class="bi bi-download"></i>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td> 45</td>
-                    <td>Simposion anual de Ciencias y Tecnologías</td>
-                    <td> Por la Cual se aprueba la realización del primer simposio anual de Ciencias y Tecnologias y se
-                        declara de interes institucional.
-                    </td>
-                    <td>FCyT</td>
-                    <td> 09 mayo, 2016</td>
-                    <td>
-                        <a href="#" download>
-                            <i class="bi bi-download"></i>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td> 32</td>
-                    <td>Resolución para el cierre de la cancelación de matrícula</td>
-                    <td> El Memorandum recibido de la Dirección de Administración y Finanzas de la Facultad de Ciencias
-                        y Tecnologías de la UNC@, en la cual solicita la Resolución para el cierre de la cancelación de
-                        matrícula, cuya recomendación es el día 16 de Mayo del año 2016
-                    </td>
-                    <td>FCyT</td>
-                    <td> 05 mayo, 2016</td>
-                    <td>
-                        <a href="#" download>
-                            <i class="bi bi-download"></i>
-                        </a>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
-</div>
+
+<main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs" style="background-color: transparent; margin-bottom: 23px; padding-bottom: 0px">
+        <div class="container">
+            <ol style="margin-top: 20px;">
+                <li><a style="color: #006fdd" href="index.html">Inicio</a></li>
+                <li style="color: #006fdd">Institucional</li>
+                <li style="color: black">Resoluciones</li>
+            </ol>
+        </div>
+    </section>
+    <section class="breadcrumbs" style="padding-top: 0px; margin-top: 0px">
+        <div class="container-titulo">
+            <h1 data-aos="fade-up" style="color: #052d72"><strong>Resoluciones</strong></h1>
+        </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="table__header">
+        <div class="input-group">
+            <input type="search" placeholder="Buscar datos ...">
+            <i class="bi bi-search"></i>
+        </div>
+    </section>
+
+    <section class="table__body">
+        <table>
+            <thead>
+            <tr>
+                <th> Numero <span class="icon-arrow">&UpArrow;</span></th>
+                <th> Título <span class="icon-arrow">&UpArrow;</span></th>
+                <th> Descripción <span class="icon-arrow">&UpArrow;</span></th>
+                <th> Institución <span class="icon-arrow">&UpArrow;</span></th>
+                <th> Fecha <span class="icon-arrow">&UpArrow;</span></th>
+                <th> Enlace</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td> 70</td>
+                <td>Horario de Atención al Público en Perceptoria</td>
+                <td> Por la cual se aprueba la modificación del horario de atención al público en perceptoria de la
+                    Facultad de Ciencias y Tecnologias de la Universidad Nacional de Caaguazu
+                </td>
+                <td> FCyT</td>
+                <td> 03 julio, 2017</td>
+                <td>
+                    <a href="#" download>
+                        <i class="bi bi-download"></i>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td> 33</td>
+                <td>Reglamento de Exoneración de Aranceles</td>
+                <td>Por la cual se aprueba el reglamento de Concesión de Exoneración de Aranceles de la Facultad de
+                    Ciencias y Tecnologias de la Universidad Nacional de Caaguazu
+                </td>
+                <td> FCyT</td>
+                <td> 13 marzo, 2017</td>
+                <td>
+                    <a href="#" download>
+                        <i class="bi bi-download"></i>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td> 71</td>
+                <td>Aprobación de Proyecto presentado por la Dirección Academica</td>
+                <td> Por la cual se aprueba el proyecto presentado por la Dirección Académica de la Facultad de
+                    Ciencias y Tecnologías - UNC@ con la relación al Cursillo Probatorio de Ingreso para el Periodo
+                    2016 - 2017
+                </td>
+                <td>FCyT</td>
+                <td> 11 julio, 2016</td>
+                <td>
+                    <a href="#" download>
+                        <i class="bi bi-download"></i>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td> 45</td>
+                <td>Simposion anual de Ciencias y Tecnologías</td>
+                <td> Por la Cual se aprueba la realización del primer simposio anual de Ciencias y Tecnologias y se
+                    declara de interes institucional.
+                </td>
+                <td>FCyT</td>
+                <td> 09 mayo, 2016</td>
+                <td>
+                    <a href="#" download>
+                        <i class="bi bi-download"></i>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td> 32</td>
+                <td>Resolución para el cierre de la cancelación de matrícula</td>
+                <td> El Memorandum recibido de la Dirección de Administración y Finanzas de la Facultad de Ciencias
+                    y Tecnologías de la UNC@, en la cual solicita la Resolución para el cierre de la cancelación de
+                    matrícula, cuya recomendación es el día 16 de Mayo del año 2016
+                </td>
+                <td>FCyT</td>
+                <td> 05 mayo, 2016</td>
+                <td>
+                    <a href="#" download>
+                        <i class="bi bi-download"></i>
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
 {% include "footer.html" %}

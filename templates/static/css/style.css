@@ -2565,30 +2565,13 @@ section {
 # Tables
 --------------------------------------------------------------*/
 
-/* Contenedor principal de la tabla */
-.center-wrapper {
-    display: flex;
-    justify-content: center;
-
-}
-.center-wrapper, .table {
-    border: none;
-    box-shadow: none;
-}
-
-main.table {
-    width: 82vw;
-    height: auto;
-    margin-top: 120px;
-}
-
 /* Encabezado de la tabla */
 .table__header {
-    width: 100%;
+    width: 98%;
     height: 10%;
     padding: .8rem 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -2620,10 +2603,15 @@ main.table {
     min-width: 200px;
 }
 
+.table__header .input-group i {
+    position: absolute;
+    font-size: 1.2rem;
+    right: 3px;
+}
 /* Cuerpo de la tabla con desplazamiento */
 .table__body {
     padding: 0;
-    max-height: 510px;
+    max-height: 357px;
     width: 95%;
     margin: .8rem auto;
     overflow: auto;
@@ -2692,17 +2680,18 @@ tbody tr:hover {
 }
 
 /* Transiciones en celdas */
-tbody tr td, tbody tr td p, tbody tr td {
+tbody tr td, tbody tr td p {
     transition: .2s ease-in-out;
 }
 
 tbody tr.hide td, tbody tr.hide td p {
     padding: 0;
-    font: 0 / 0 sans-serif;
+    font-size: 0;
+    line-height: 0;
     transition: .2s ease-in-out .5s;
 }
 
-tbody tr.hide td {
+tbody tr.hide {
     width: 0;
     height: 0;
     transition: .2s ease-in-out .5s;
