@@ -83,6 +83,9 @@ section {
     background: #f0f0f0;
     padding:20px 0 20px 0;
 }
+.tittlecolor{
+  color: #012970;
+}
 .breadInicio{
   color: #006fdd;
 }
@@ -2564,7 +2567,7 @@ section {
 
 .container-titulo{
   padding: 20px 0 20px 0;
-  margin-left: 165px;
+  margin-left: 115px;
 }
 .container-titulo h1{
   margin-bottom: 0 !important;
