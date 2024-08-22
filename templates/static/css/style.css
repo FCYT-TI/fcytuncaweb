@@ -2595,3 +2595,6 @@ section {
    flex-direction: column;
 
 }
+ .team .member .member-info p.consejo-contenido {
+  font-style: normal;
+}
