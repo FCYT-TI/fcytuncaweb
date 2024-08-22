@@ -1538,7 +1538,7 @@ section {
 }
 
 .clients .clients-slider .swiper-pagination {
-  margin-top: 20px;
+  margin-top: 55px;
   position: relative;
 }
 
@@ -2577,6 +2577,145 @@ section {
 .container{
   margin-left: 95px;
 }
+/*------Convenios------ */
+.agreements{
+  border-radius: 8px ;
+  padding: 30px 30px;
+  box-shadow: 2px 2px 4px 1px darkgray;
+  margin-bottom: 25px;
+  align-items: center;
+  transition: transform 0.5s ease-in-out, opacity 1s ease-in-out !important;
+}
+.agreements:hover{
+  background: #f7f7f7;
+  transform: scale(1.03) !important;
+}
+.agreements a:hover{
+  text-decoration: underline;
+}
+.agreementsImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 50px;
+  margin-right: 10px;
+}
+.agreementsTittle{
+  font-size: 14px;
+}
+.agreementsText{
+  font-size: 13px;
+  line-height: 1.8;
+}
+.containerAgreements{
+  margin: auto;
+  width: 68%;
+  text-align: justify;
+}
+.btnVerAgreements{
+  display: none;
+}
+.containerSlider{
+    margin: auto;
+  width: 68%;
+}
+
+@media (max-width: 1024px) {
+  .containerAgreements {
+    margin: auto;
+    width: 80%;
+  }
+  .agreementsImg{
+  width: 120px;
+  height: 100%;
+  margin-right: 10px;
+}
+  .agreements{
+    align-items: center;
+  }
+  .containerSlider{
+    margin: auto;
+    width: 80%;
+  }
+}
+
+@media (max-width: 769px) {
+  .containerAgreements {
+    margin: auto;
+    width: 85%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px 20px;
+  }
+  .aVerAgreements{
+    display: none;
+  }
+  .btnVerAgreements{
+    display: block;
+    width: 100%;
+    background:#006fdd;
+    color: white;
+  }
+  .btnVerAgreements:hover{
+      background: #006ee1;
+  }
+  .agreements {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    padding: 20px 20px;
+  }
+  .agreementsTittle{
+  font-size: 11px;
+}
+  .agreementsText{
+  font-size: 11px;
+  line-height: 1.8;
+}
+  .agreementsImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+}
+  .agreementsImg img{
+    height: 120px;
+    width: 100%;
+    object-fit: contain;
+  }
+  .containerSlider{
+        margin: auto;
+    width: 85%;
+  }
+}
+@media (max-width: 500px) {
+    .containerAgreements {
+    margin: auto;
+    width: 80%;
+      display: flex;
+      flex-direction: column;
+    text-align: center;
+  }
+
+  .agreementsTittle{
+    text-align: center;
+  font-size: 12px;
+}
+  .agreementsText{
+  font-size: 11px;
+  line-height: 1.8;
+}.containerSlider{
+      margin: auto;
+    width: 80%;
+   }
+
+}
+
+
 
 /*Consejo Directivo*/
 

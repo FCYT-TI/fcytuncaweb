@@ -12,3 +12,7 @@ def resenha(request):
 
 def consejo(request):
     return render(request, 'consejo.html')
+
+
+def acuerdos(request):
+    return render(request, 'acuerdosconvenios.html')
