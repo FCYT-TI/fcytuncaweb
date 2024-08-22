@@ -169,7 +169,7 @@ section {
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
-    transition-delay: 0 !important;
+    transition-delay: 0ms !important;
   }
 }
 
@@ -2581,7 +2581,7 @@ section {
 
 /* Encabezado de la tabla */
 .table__header {
-    width: 98%;
+    width: 93%;
     height: 10%;
     padding: .8rem 1rem;
     display: flex;
@@ -2611,7 +2611,7 @@ section {
 /* Estilo del input de búsqueda */
 .table__header .input-group input {
     width: 100%;
-    padding: 0 .5rem 0 1.5rem;
+    padding: 0 .5rem 0 2.5rem;
     background-color: transparent;
     border: none;
     outline: none;
@@ -2621,13 +2621,14 @@ section {
 .table__header .input-group i {
     position: absolute;
     font-size: 1.2rem;
-    left: 3px;
+    left: 25px;
+    color: #395fa0
 }
 /* Cuerpo de la tabla con desplazamiento */
 .table__body {
     padding: 0;
     max-height: 357px;
-    width: 95%;
+    width: 85%;
     margin: .8rem auto;
     overflow: auto;
 }
