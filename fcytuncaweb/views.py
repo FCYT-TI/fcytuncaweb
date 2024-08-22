@@ -22,3 +22,6 @@ def consejo(request):
 
 def acuerdos(request):
     return render(request, 'acuerdosconvenios.html')
+
+def bienestar_estudiantil(request):
+    return render(request, 'bienestar_estudiantil.html')
