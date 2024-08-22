@@ -2599,6 +2599,7 @@ section {
     display: flex;
     align-items: center;
     transition: .2s;
+    box-shadow: 0 .1rem .4rem #0002;
 }
 
 .table__header .input-group:hover {
@@ -2610,7 +2611,7 @@ section {
 /* Estilo del input de búsqueda */
 .table__header .input-group input {
     width: 100%;
-    padding: 0 .5rem 0 .3rem;
+    padding: 0 .5rem 0 1.5rem;
     background-color: transparent;
     border: none;
     outline: none;
@@ -2620,7 +2621,7 @@ section {
 .table__header .input-group i {
     position: absolute;
     font-size: 1.2rem;
-    right: 3px;
+    left: 3px;
 }
 /* Cuerpo de la tabla con desplazamiento */
 .table__body {
@@ -2662,6 +2663,7 @@ th, td {
 td i {
     font-size: 24px; /* Tamaño del ícono */
     font-weight: bold; /* Grosor del ícono */
+    margin: 0 7px;
 }
 
 /* Encabezado de la tabla */
