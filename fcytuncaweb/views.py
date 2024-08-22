@@ -10,6 +10,9 @@ def raiz(request):
 def resenha(request):
     return render(request, 'resenhahistorica.html')
 
+def marcolegal(request):
+    return render(request, 'marcolegal.html')
+
 def resolucion(request):
     return render(request, 'resolucion.html')
 
