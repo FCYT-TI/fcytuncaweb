@@ -1538,7 +1538,7 @@ section {
 }
 
 .clients .clients-slider .swiper-pagination {
-  margin-top: 20px;
+  margin-top: 55px;
   position: relative;
 }
 
@@ -2582,7 +2582,7 @@ section {
   border-radius: 8px ;
   padding: 30px 30px;
   box-shadow: 2px 2px 4px 1px darkgray;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   align-items: center;
   transition: transform 0.5s ease-in-out, opacity 1s ease-in-out !important;
 }
@@ -2616,7 +2616,10 @@ section {
 .btnVerAgreements{
   display: none;
 }
-
+.containerSlider{
+    margin: auto;
+  width: 68%;
+}
 
 @media (max-width: 1024px) {
   .containerAgreements {
@@ -2631,16 +2634,20 @@ section {
   .agreements{
     align-items: center;
   }
+  .containerSlider{
+    margin: auto;
+    width: 80%;
+  }
 }
 
 @media (max-width: 769px) {
-    .containerAgreements {
+  .containerAgreements {
     margin: auto;
     width: 85%;
     text-align: center;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px 20px;
   }
   .aVerAgreements{
     display: none;
@@ -2679,7 +2686,11 @@ section {
     height: 120px;
     width: 100%;
     object-fit: contain;
-}
+  }
+  .containerSlider{
+        margin: auto;
+    width: 85%;
+  }
 }
 @media (max-width: 500px) {
     .containerAgreements {
@@ -2687,7 +2698,7 @@ section {
     width: 80%;
       display: flex;
       flex-direction: column;
-    text-align: justify;
+    text-align: center;
   }
 
   .agreementsTittle{
@@ -2697,7 +2708,10 @@ section {
   .agreementsText{
   font-size: 11px;
   line-height: 1.8;
-}
+}.containerSlider{
+      margin: auto;
+    width: 80%;
+   }
 
 }
   
