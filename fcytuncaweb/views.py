@@ -11,3 +11,7 @@ def resenha(request):
     return render(request, 'resenhahistorica.html')
 def autoridades(request):
     return render(request, 'autoridades.html')
+
+
+def acuerdos(request):
+    return render(request, 'acuerdosconvenios.html')
