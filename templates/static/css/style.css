@@ -2579,64 +2579,19 @@ section {
 }
 
 /*Consejo Directivo*/
-#consejo-img table{
-  border-style: none ;
-}
-#consejo-img {
-  width: 100%;
-  display: table;
-}
-#consejo-img p{
- font-size: 10px;
-}
-#consejo-img tr {
-  display: table-row;
-}
 
-#consejo-img td {
-  text-align: center;
-  padding: 10px;
-}
-
-#consejo-img img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-}
-
-/* Media query para dispositivos móviles */
-@media (max-width: 768px) {
-  .table-container {
-    display: block;
-  }
-
-  #consejo-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #consejo-img tr {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-    align-items: center;
-  }
-
-  #consejo-img td {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    box-sizing: border-box;
-    align-items: center;
-  }
-
-  #consejo-img img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 5px;
-  }
-}
 #Titutlo-Consejo {
     text-align: center;
+}
+
+ #container-consejo {
+      margin: 0;
+  }
+
+ .centered-section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
 }
