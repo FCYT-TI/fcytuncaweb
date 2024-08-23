@@ -2921,3 +2921,42 @@ thead th.active, tbody td.active {
  .team .member .member-info p.consejo-contenido {
   font-style: normal;
 }
+
+.custom-testimonial{
+  padding: 0 !important;
+}
+
+.mision{
+  background:#006fdd;
+  color:#fff;
+  border-radius: 40px 40px 40px 0;
+  padding: 30px
+}
+
+.vision{
+  background:#006fdd;
+  color:#fff;
+  border-radius: 40px 0 40px 40px;
+  padding: 30px
+}
+
+.valores{
+  background:#006fdd;
+  color:#fff;
+  border-radius: 40px 40px 40px 0;
+  padding: 30px
+}
+
+.custom-testimonial-items p{
+  font-style: normal !important;
+  padding: 20px;
+}
+
+.custom-testimonial-items{
+  padding: 0 !important;
+  border-radius: 40px 40px 0 0 !important;
+}
+
+.valores-custom{
+  padding: 7px 7px 7px 30px !important;
+}
