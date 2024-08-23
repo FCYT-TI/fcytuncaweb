@@ -16,3 +16,6 @@ def consejo(request):
 
 def acuerdos(request):
     return render(request, 'acuerdosconvenios.html')
+
+def calendario(request):
+    return render(request, 'calendario.html')
