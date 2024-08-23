@@ -23,8 +23,13 @@ urlpatterns = [
     path('', views.raiz),
     path('inicio/', views.index),
     path('historia/', views.resenha),
+    path('marcolegal/', views.marcolegal),
     path('consejo/', views.consejo),
     path('acuerdos/', views.acuerdos),
+    path('resolucion/', views.resolucion),
+    path('bienestar_estudiantil/', views.bienestar_estudiantil),
+    path('misionvision/', views.misionVision),
+path('identidad/', views.pagdeidentidad),
     path('calendario/', views.calendario),
 
 ]

@@ -10,12 +10,27 @@ def raiz(request):
 def resenha(request):
     return render(request, 'resenhahistorica.html')
 
+def marcolegal(request):
+    return render(request, 'marcolegal.html')
+
+def resolucion(request):
+    return render(request, 'resolucion.html')
+
 def consejo(request):
     return render(request, 'consejo.html')
 
 
 def acuerdos(request):
     return render(request, 'acuerdosconvenios.html')
+
+def bienestar_estudiantil(request):
+    return render(request, 'bienestar_estudiantil.html')
+
+def misionVision(request):
+    return render(request, 'misionvision.html')
+
+def pagdeidentidad(request):
+    return render(request, 'pagdeidentidad.html')
 
 def calendario(request):
     return render(request, 'calendario.html')
