@@ -338,6 +338,138 @@ document.addEventListener('DOMContentLoaded', (event) => {
   startInterval();
 });
 
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent, .containerlogoFCytIdentidad-img');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent, .containerlogoFCytIdentidad-img, .containerisologoinst-img');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent, .containerlogoFCytIdentidad-img, .containerisologoinst-img, .containerconstrucymodu-img');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent, .containerlogoFCytIdentidad-img, .containerisologoinst-img, .containerconstrucymodu-img, .containersecurityredutc-img');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent, .containerlogoFCytIdentidad-img, .containerisologoinst-img, .containerconstrucymodu-img, .containersecurityredutc-img, .containercolorimetria-img');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent, .containerlogoFCytIdentidad-img, .containerisologoinst-img, .containerconstrucymodu-img, .containersecurityredutc-img, .containercolorimetria-img, .containerapliccorrect-img');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent, .containerlogoFCytIdentidad-img, .containerisologoinst-img, .containerconstrucymodu-img, .containersecurityredutc-img, .containercolorimetria-img, .containerapliccorrect-img, .containertipografia-img');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent, .containerlogoFCytIdentidad-img, .containerisologoinst-img, .containerconstrucymodu-img, .containersecurityredutc-img, .containercolorimetria-img, .containerapliccorrect-img, .containertipografia-img, .containerrestric-img');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent, .containerlogoFCytIdentidad-img, .containerisologoinst-img, .containerconstrucymodu-img, .containersecurityredutc-img, .containercolorimetria-img, .containerapliccorrect-img, .containertipografia-img, .containerrestric-img, .containerTextAnim');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent, .containerlogoFCytIdentidad-img, .containerisologoinst-img, .containerconstrucymodu-img, .containersecurityredutc-img, .containercolorimetria-img, .containerapliccorrect-img, .containertipografia-img, .containerrestric-img, .containerTextAnim');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
 /**
    * Tables
    */

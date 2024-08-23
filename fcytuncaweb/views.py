@@ -28,3 +28,6 @@ def bienestar_estudiantil(request):
 
 def misionVision(request):
     return render(request, 'misionvision.html')
+
+def pagdeidentidad(request):
+    return render(request, 'pagdeidentidad.html')
