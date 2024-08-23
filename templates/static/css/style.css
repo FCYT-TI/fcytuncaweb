@@ -3102,3 +3102,7 @@ display: block;
  .team .member .member-info p.consejo-contenido {
   font-style: normal;
 }
+
+ .centertitle {
+   text-align:center;
+ }
