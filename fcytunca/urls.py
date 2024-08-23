@@ -28,4 +28,5 @@ urlpatterns = [
     path('acuerdos/', views.acuerdos),
     path('resolucion/', views.resolucion),
     path('bienestar_estudiantil/', views.bienestar_estudiantil),
+    path('reglamento_investigacion/', views.reglamento_investigacion),
 ]

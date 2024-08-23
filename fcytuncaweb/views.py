@@ -25,3 +25,6 @@ def acuerdos(request):
 
 def bienestar_estudiantil(request):
     return render(request, 'bienestar_estudiantil.html')
+
+def reglamento_investigacion(request):
+    return render(request, 'reglamento_investigacion.html')
