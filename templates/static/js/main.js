@@ -337,3 +337,202 @@ document.addEventListener('DOMContentLoaded', (event) => {
   // Cambia la imagen cada 3 segundos
   startInterval();
 });
+
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent, .containerlogoFCytIdentidad-img');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent, .containerlogoFCytIdentidad-img, .containerisologoinst-img');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent, .containerlogoFCytIdentidad-img, .containerisologoinst-img, .containerconstrucymodu-img');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent, .containerlogoFCytIdentidad-img, .containerisologoinst-img, .containerconstrucymodu-img, .containersecurityredutc-img');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent, .containerlogoFCytIdentidad-img, .containerisologoinst-img, .containerconstrucymodu-img, .containersecurityredutc-img, .containercolorimetria-img');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent, .containerlogoFCytIdentidad-img, .containerisologoinst-img, .containerconstrucymodu-img, .containersecurityredutc-img, .containercolorimetria-img, .containerapliccorrect-img');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent, .containerlogoFCytIdentidad-img, .containerisologoinst-img, .containerconstrucymodu-img, .containersecurityredutc-img, .containercolorimetria-img, .containerapliccorrect-img, .containertipografia-img');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent, .containerlogoFCytIdentidad-img, .containerisologoinst-img, .containerconstrucymodu-img, .containersecurityredutc-img, .containercolorimetria-img, .containerapliccorrect-img, .containertipografia-img, .containerrestric-img');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent, .containerlogoFCytIdentidad-img, .containerisologoinst-img, .containerconstrucymodu-img, .containersecurityredutc-img, .containercolorimetria-img, .containerapliccorrect-img, .containertipografia-img, .containerrestric-img, .containerTextAnim');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.containerTitleIdent, .containerlogoFCytIdentidad-img, .containerisologoinst-img, .containerconstrucymodu-img, .containersecurityredutc-img, .containercolorimetria-img, .containerapliccorrect-img, .containertipografia-img, .containerrestric-img, .containerTextAnim');
+  var windowHeight = window.innerHeight;
+
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  });
+});
+/**
+   * Tables
+   */
+
+// Selección de elementos del DOM
+const search = document.querySelector(".input-group input");
+const tableRows = document.querySelectorAll("tbody tr");
+const tableHeadings = document.querySelectorAll("thead th");
+
+// Función para manejar la búsqueda en la tabla
+search.addEventListener("input", function () {
+  const searchData = search.value.toLowerCase();
+
+  tableRows.forEach((row, i) => {
+    const rowData = row.textContent.toLowerCase();
+    const isVisible = rowData.indexOf(searchData) >= 0;
+
+    row.classList.toggle("hide", !isVisible);
+    row.style.setProperty("--delay", `${i / 25}s`);
+  });
+
+  // Alternar color de fondo para las filas visibles
+  const visibleRows = document.querySelectorAll("tbody tr:not(.hide)");
+  visibleRows.forEach((visibleRow, i) => {
+    visibleRow.style.backgroundColor = i % 2 === 0 ? "transparent" : "#0000000b";
+  });
+});
+
+// Función para manejar la ordenación de columnas
+tableHeadings.forEach((heading, index) => {
+  let sortAsc = true;
+
+  heading.addEventListener("click", () => {
+    // Activar la cabecera seleccionada
+    tableHeadings.forEach((head) => head.classList.remove("active"));
+    heading.classList.add("active");
+
+    // Activar la columna seleccionada
+    document.querySelectorAll("td").forEach((cell) => cell.classList.remove("active"));
+    tableRows.forEach((row) => {
+      row.querySelectorAll("td")[index].classList.add("active");
+    });
+
+    // Alternar el orden de clasificación
+    heading.classList.toggle("asc", sortAsc);
+    sortAsc = !sortAsc;
+
+    // Ordenar la tabla
+    sortTable(index, sortAsc);
+  });
+});
+
+// Función para ordenar las filas de la tabla
+function sortTable(columnIndex, sortAsc) {
+  const sortedRows = [...tableRows].sort((a, b) => {
+    const firstRowData = a.querySelectorAll("td")[columnIndex].textContent.toLowerCase();
+    const secondRowData = b.querySelectorAll("td")[columnIndex].textContent.toLowerCase();
+
+    return sortAsc
+      ? firstRowData.localeCompare(secondRowData)
+      : secondRowData.localeCompare(firstRowData);
+  });
+
+  const tableBody = document.querySelector("tbody");
+  sortedRows.forEach((row) => tableBody.appendChild(row));
+}
