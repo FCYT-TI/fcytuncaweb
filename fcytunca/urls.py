@@ -30,4 +30,6 @@ urlpatterns = [
     path('bienestar_estudiantil/', views.bienestar_estudiantil),
     path('misionvision/', views.misionVision),
 path('identidad/', views.pagdeidentidad),
+    path('calendario/', views.calendario),
+
 ]
