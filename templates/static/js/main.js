@@ -480,23 +480,25 @@ const tableRows = document.querySelectorAll("tbody tr");
 const tableHeadings = document.querySelectorAll("thead th");
 
 // Función para manejar la búsqueda en la tabla
-search.addEventListener("input", function () {
-  const searchData = search.value.toLowerCase();
+if (search){
+    search.addEventListener("input", function () {
+    const searchData = search.value.toLowerCase();
 
-  tableRows.forEach((row, i) => {
-    const rowData = row.textContent.toLowerCase();
-    const isVisible = rowData.indexOf(searchData) >= 0;
+    tableRows.forEach((row, i) => {
+      const rowData = row.textContent.toLowerCase();
+      const isVisible = rowData.indexOf(searchData) >= 0;
 
-    row.classList.toggle("hide", !isVisible);
-    row.style.setProperty("--delay", `${i / 25}s`);
+      row.classList.toggle("hide", !isVisible);
+      row.style.setProperty("--delay", `${i / 25}s`);
+    });
+
+    // Alternar color de fondo para las filas visibles
+    const visibleRows = document.querySelectorAll("tbody tr:not(.hide)");
+    visibleRows.forEach((visibleRow, i) => {
+      visibleRow.style.backgroundColor = i % 2 === 0 ? "transparent" : "#0000000b";
+    });
   });
-
-  // Alternar color de fondo para las filas visibles
-  const visibleRows = document.querySelectorAll("tbody tr:not(.hide)");
-  visibleRows.forEach((visibleRow, i) => {
-    visibleRow.style.backgroundColor = i % 2 === 0 ? "transparent" : "#0000000b";
-  });
-});
+}
 
 // Función para manejar la ordenación de columnas
 tableHeadings.forEach((heading, index) => {

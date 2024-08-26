@@ -3385,7 +3385,7 @@ display: block;
   gap: 10px;
   align-items: center;
   justify-content: space-between;
-  padding: 0 40px;
+  padding: 0 10px;
   padding-left: 70px;
   margin-top: 50px;
   margin-bottom: 20px;
@@ -3408,7 +3408,7 @@ display: block;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  padding-left: 4px;
+  padding-left: 70px;
 }
 .events .event {
   position: relative;
