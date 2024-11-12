@@ -982,11 +982,11 @@ section {
   text-align: center;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   border-radius: 4px;
+  height: 100%;
   position: relative;
   overflow: hidden;
   transition: 0.3s;
 }
-
 .pricing .box:hover {
   transform: scale(1.1);
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
@@ -1052,6 +1052,8 @@ section {
   font-weight: 600;
   transition: 0.3s;
   border: 1px solid #006fdd;
+  margin-bottom: 0;
+  margin-top: auto;
 }
 
 .pricing .btn-buy:hover {
@@ -3145,3 +3147,14 @@ display: block;
  .centertitle {
    text-align:center;
  }
+
+/* Pasantias */
+.Pasantiacontainer{
+  margin: 0;
+}
+#pricingPasantia{
+  overflow: visible;
+}
+.ulPasantia{
+  margin: 0 !important;
+}

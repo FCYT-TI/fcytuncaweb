@@ -32,5 +32,8 @@ def misionVision(request):
 def pagdeidentidad(request):
     return render(request, 'pagdeidentidad.html')
 
+def pasantias(request):
+    return render(request, 'pasantia.html')
+
 def reglamento_investigacion(request):
     return render(request, 'reglamento_investigacion.html')
