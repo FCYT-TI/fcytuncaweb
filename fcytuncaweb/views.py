@@ -37,3 +37,6 @@ def pasantias(request):
 
 def reglamento_investigacion(request):
     return render(request, 'reglamento_investigacion.html')
+
+def calendario(request):
+    return render(request, 'calendario.html')

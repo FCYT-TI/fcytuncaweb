@@ -29,9 +29,8 @@ urlpatterns = [
     path('resolucion/', views.resolucion),
     path('bienestar_estudiantil/', views.bienestar_estudiantil),
     path('misionvision/', views.misionVision),
-path('identidad/', views.pagdeidentidad),
+    path('identidad/', views.pagdeidentidad),
     path('reglamento_investigacion/', views.reglamento_investigacion),
-
     path('pasantia/', views.pasantias),
-
+    path('calendario/', views.calendario),
 ]
