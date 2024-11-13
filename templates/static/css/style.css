@@ -576,7 +576,7 @@ section {
 --------------------------------------------------------------*/
 .about .content {
   background-color: #f6f9ff;
-  padding: 40px;
+  padding: 0 40px;
 }
 
 .about h3 {
@@ -584,12 +584,16 @@ section {
   font-weight: 700;
   color: #006fdd;
   text-transform: uppercase;
+    text-align: justify;
+
 }
 
 .about h2 {
   font-size: 24px;
   font-weight: 700;
   color: #012970;
+  text-align: justify;
+
 }
 
 .about p {
@@ -623,6 +627,63 @@ section {
 .about .btn-read-more:hover i {
   transform: translateX(5px);
 }
+
+.about h1 {
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+    text-align: justify;
+
+}
+/* Estilos para imágenes en la sección .about */
+.about img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+
+.about2 .content {
+  background-color: #f6f9ff;
+  padding: 40px;
+}
+
+.about2 h1 {
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+  text-align: justify;
+}
+
+.about2 h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #012970;
+  text-align: justify;
+}
+
+.about2 p {
+  margin: 15px 0 30px 0;
+  line-height: 24px;
+   text-align: justify; /* Justifica el texto */
+  direction: rtl; /* Cambia la dirección del texto a derecha a izquierda */
+  text-align: left; /* Alinea el texto a la izquierda en la dirección RTL */
+
+}
+
+.about2 img {
+   position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsión */
+}
+
+
 
 /*--------------------------------------------------------------
 # Values
@@ -1503,6 +1564,7 @@ section {
   margin-bottom: 5px;
   font-size: 20px;
   color: #012970;
+
 }
 
 .team .member .member-info span {
@@ -1528,6 +1590,25 @@ section {
 .team .member:hover .social {
   right: 8px;
   opacity: 1;
+}
+
+.team .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team .col-lg-3,
+.team .col-md-6 {
+    display: flex;
+    justify-content: center;
+}
+.team-consejo {
+  background: #fff;
+  align-items: center;
+  text-align: center;
+  padding: 60px 0;
+  justify-content: center;
 }
 
 /*--------------------------------------------------------------
