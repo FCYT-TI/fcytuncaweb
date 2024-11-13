@@ -30,7 +30,14 @@ h5,
 h6 {
   font-family: "Montserrat SemiBold", sans-serif;
 }
-
+/*Main section*/
+.main{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+}
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -3449,3 +3456,15 @@ display: block;
   line-height: 1.4;
 }
 
+
+
+/* Pasantias */
+.Pasantiacontainer{
+  margin: 0;
+}
+#pricingPasantia{
+  overflow: visible;
+}
+.ulPasantia{
+  margin: 0 !important;
+}
