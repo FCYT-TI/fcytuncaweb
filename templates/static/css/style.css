@@ -104,7 +104,7 @@ section {
 }
 @media (max-width: 992px) {
   .breadcrumbs {
-    margin-top: 57px;
+     margin-left: 15%;
   }
 }
 
@@ -2735,6 +2735,11 @@ padding: 20px 30px 20px 30px;
   text-align: justify;
 }
 
+@media (max-width: 992px) {
+    .container-titulo{
+  margin-left: 15%; /*responsive del titulo*/
+}
+}
 /*--------------------------------------------------------------
 # Tables
 --------------------------------------------------------------*/
@@ -3312,4 +3317,10 @@ display: block;
 }
 .ulPasantia{
   margin: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .d-flex span {
+    margin-left: 0 !important;
+  }
 }
