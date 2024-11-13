@@ -40,3 +40,6 @@ def reglamento_investigacion(request):
 
 def calendario(request):
     return render(request, 'calendario.html')
+
+def carreraInfor(request):
+    return render(request, 'carreraInformatica.html')
