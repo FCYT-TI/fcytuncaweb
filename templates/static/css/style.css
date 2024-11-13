@@ -30,7 +30,14 @@ h5,
 h6 {
   font-family: "Montserrat SemiBold", sans-serif;
 }
-
+/*Main section*/
+.main{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+}
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -183,6 +190,7 @@ section {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+  display: flex;
 }
 
 .header.header-scrolled {
@@ -623,6 +631,60 @@ section {
 .about .btn-read-more:hover i {
   transform: translateX(5px);
 }
+/*ABOUT RESPONSIVE*/
+@media (max-width: 560px) {
+  .overlay-content{
+    width: 70%;
+  }
+  .overlay-content h3{
+    font-size: 12px !important;
+  }
+  .overlay-content h2{
+    font-size: 16px !important;
+  }
+  .about .btn-read-more {
+  padding: 10px 20px;
+}
+  .about .btn-read-more span {
+  font-size: 10px;
+}
+
+.about .btn-read-more i {
+  font-size: 12px;
+}
+
+  
+}
+@media (max-width: 420px) {
+  .about .content {
+  background-color: #f6f9ff;
+}
+  .overlay-content{
+    width: 70%;
+    padding: 10px !important;
+  }
+  .overlay-content h3{
+    font-size: 8px !important;
+  }
+  .overlay-content h2{
+    font-size: 12px !important;
+  }
+  .about .btn-read-more {
+  padding: 6px 12px;
+}
+  .about .btn-read-more span {
+  font-size: 10px;
+}
+
+.about .btn-read-more i {
+  font-size: 12px;
+}
+#btndiplomas{
+  margin-top: 10px !important;
+}
+
+
+}
 
 /*--------------------------------------------------------------
 # Values
@@ -982,11 +1044,11 @@ section {
   text-align: center;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   border-radius: 4px;
+  height: 100%;
   position: relative;
   overflow: hidden;
   transition: 0.3s;
 }
-
 .pricing .box:hover {
   transform: scale(1.1);
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
@@ -1052,6 +1114,8 @@ section {
   font-weight: 600;
   transition: 0.3s;
   border: 1px solid #006fdd;
+  margin-bottom: 0;
+  margin-top: auto;
 }
 
 .pricing .btn-buy:hover {
@@ -1598,6 +1662,16 @@ section {
   position: relative;
   transition: 0.3s;
 }
+/*RESPONSIVE TITLE*/
+@media (max-width: 500px) {
+  .recent-blog-posts .post-box .post-title {
+    font-size: 18px;
+  }
+  .recent-blog-posts .post-box .post-date {
+    font-size: 14px;
+  }
+}
+
 
 .recent-blog-posts .post-box .readmore {
   display: flex;
@@ -1628,6 +1702,7 @@ section {
   color: #444444;
   background: #fafbff;
   padding: 30px;
+  height: 100%;
 }
 
 .contact .info-box i {
@@ -2464,7 +2539,7 @@ section {
     }
 }
 
-
+/* Carrusel */
 
 #carousel-section{
   padding-top: 80px;
@@ -2474,8 +2549,7 @@ section {
 .carousel {
   position: relative;
   max-width: 100%;
-  height: 90vh;
-  overflow: hidden;
+  height: 100%;
   margin: 10px auto;
 }
 .imgGradient{
@@ -2483,6 +2557,8 @@ section {
 }
 .carousel-image {
   position: absolute;
+  right: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -2497,7 +2573,7 @@ section {
 .carousel-image img {
   width: 100%;
   height: 100%;
-  object-fit:cover;
+  object-fit: cover;
   object-position: 50% 20%;
 }
 .carousel-image{
@@ -2508,7 +2584,7 @@ section {
   margin-left: 0;
   background:rgba(44, 44, 44, 0.468) ;
   border-radius: 20px;
-  padding: 20px 50px 20px 0px;
+  padding: 20px 50px 20px 50px;
   width: 600px;
 }
 .carousel-image.active {
@@ -2517,11 +2593,92 @@ section {
 
 .div-carrusel{
   margin-left: 120px;
-  width: 600px;
   background:rgba(44, 44, 44, 0.468) ;
   border-radius: 20px;
-  padding: 20px 0px 20px 50px;
-  width: 600px;
+  padding: 20px 50px 20px 50px;
+}
+
+@media(max-width: 900px) {
+  .carousel-image{
+    justify-content: center;
+  }
+  .div-carrusel{
+    width: 60%;
+    margin: auto;
+  }
+  #carruselLeft{
+    width: 80%;
+    margin: 0;
+    right: auto !important;
+}
+  .div-carrusel .btn-get-started {
+  margin-top: 20px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 20px;
+  text-shadow:none;
+  transition: 0.5s;
+  color: #fff;
+  background:#006fdd;
+  border: 2px solid #006fdd;
+}
+}
+@media(max-width: 620px) {
+  #carousel-section{
+    height: 665px;
+}
+  .div-carrusel .btn-get-started {
+    margin-top: 10px !important;
+    padding: 10px 20px !important;
+  }
+  .div-carrusel{
+  padding: 20px 30px 20px 30px;
+    width: 80%;
+}
+    #carruselLeft{
+padding: 20px 30px 20px 30px;
+}
+  .div-carrusel .btn-get-started span {
+    font-weight: 600;
+    font-size: 12px !important;
+  }
+  .div-carrusel h1 {
+    font-size: 22px !important;
+  }
+  .div-carrusel h4 {
+    font-size: 18px !important;
+  }
+  .div-carrusel p {
+    font-size: 14px !important;
+  }
+}
+@media(max-width: 450px) {
+    .div-carrusel .btn-get-started {
+    padding: 8px 16px !important;
+  }
+  .div-carrusel .btn-get-started span {
+    font-weight: 600;
+    font-size: 10px !important;
+  }
+  .btnTwin{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .btnTwin a{
+    margin: 0 !important;
+  }
+}
+@media(max-width: 360px) {
+    .div-carrusel h1 {
+    font-size: 20px !important;
+  }
+  .div-carrusel h4 {
+    font-size: 16px !important;
+  }
+  .div-carrusel p {
+    font-size: 12px !important;
+  }
+
 }
 .div-carrusel .btn-get-started {
   margin-top: 20px;
@@ -2759,7 +2916,7 @@ thead th.active, tbody td.active {
     color: #006fdd;
 }
 .container{
-  margin-left: 95px;
+  /*margin-left: 95px;*/
 }
 .containerlogoFCytIdentidad-img {
   display: block;
@@ -3145,3 +3302,14 @@ display: block;
  .centertitle {
    text-align:center;
  }
+
+/* Pasantias */
+.Pasantiacontainer{
+  margin: 0;
+}
+#pricingPasantia{
+  overflow: visible;
+}
+.ulPasantia{
+  margin: 0 !important;
+}

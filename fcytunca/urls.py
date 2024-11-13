@@ -32,6 +32,7 @@ urlpatterns = [
     path('misionvision/', views.misionVision),
     path('identidad/', views.pagdeidentidad),
     path('reglamento_investigacion/', views.reglamento_investigacion),
+    path('pasantia/', views.pasantias),
     path('noticias/', views.blog),
     path('noticias/<slug:pk>', views.single_blog, name='single_blog'),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
