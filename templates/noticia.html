@@ -1,0 +1,148 @@
+{% load static %}
+{% include "header.html" %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a class="breadInicio" href="/inicio">Inicio</a></li>
+          <li class="breadMenu" >Novedades</li>
+            <li class="breadSeccion">Noticias</li>
+        </ol>
+      </div>
+    </section>
+      <section class="tittle">
+      <div class="container-titulo">
+          <h1 class="tittlecolor" data-aos="fade-up" ><strong>Noticias</strong></h1>
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-8 entries">
+              
+            {% for post in posts_pagin %}
+            <article class="entry">
+                
+
+              <div class="entry-img">
+                <img src="{% static "img/" %}{{ post.foto1 }}" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="/noticias/{{ post.id }}">{{ post.title }}</a>
+              </h2>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> {{ post.author }}</li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> {{ post.published_date }}</li>
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <p>
+                  {{ post.text1|truncatewords:"100" }}
+                </p>
+                <div class="read-more">
+                  <a href="/noticias/{{ post.id }}">Leer Más</a>
+                </div>
+              </div>
+            
+            </article>
+              {% endfor %}<br><!-- End blog entry -->
+              
+
+
+
+            <div class="blog-pagination">
+              <ul class="justify-content-center">
+                        {% if posts_pagin.has_previous %}
+                            <li class="active"><a href="?page=1" ><b style="padding: 5px;"> Inicio </b></a></li>
+                            <li class="active"><a href="?page={{ posts_pagin.previous_page_number }}"><i class="bi bi-chevron-left" style="display: inline"></i></a></li>
+                        {% endif %}
+                <span style="padding-top: 15px" >
+                            Pág. {{ posts_pagin.number }} de {{ posts_pagin.paginator.num_pages }}&nbsp;&nbsp;
+                        </span>
+                        {% if posts_pagin.has_next %}
+                            <li class="active"><a href="?page={{ posts_pagin.next_page_number }}"><i class="bi bi-chevron-right" style="display: inline"></i></a></li>
+                            <li class="active"><a href="?page={{ posts_pagin.paginator.num_pages }}"><b style="padding: 5px;"> Fin </b></a></li>
+                        {% endif %}
+              </ul>
+            </div>
+              
+
+          </div><!-- End blog entries list -->
+
+          <div class="col-lg-4">
+
+            <div class="sidebar">
+
+              <h3 class="sidebar-title">Buscar</h3>
+              <div class="sidebar-item search-form">
+                <form action="">
+                  <input type="text">
+                  <button type="submit"><i class="bi bi-search"></i></button>
+                </form>
+              </div><!-- End sidebar search formn-->
+
+              <h3 class="sidebar-title">Categorias</h3>
+              <div class="sidebar-item categories">
+                <!--<ul>
+                  <li><a href="#">General <span>(25)</span></a></li>
+                  <li><a href="#">Lifestyle <span>(12)</span></a></li>
+                  <li><a href="#">Travel <span>(5)</span></a></li>
+                  <li><a href="#">Design <span>(22)</span></a></li>
+                  <li><a href="#">Creative <span>(8)</span></a></li>
+                  <li><a href="#">Educaion <span>(14)</span></a></li>
+                </ul>-->
+              </div><!-- End sidebar categories-->
+
+              <h3 class="sidebar-title">Noticias Recientes</h3>
+              <div class="sidebar-item recent-posts">
+                  {% for post in posts %}
+                <div class="post-item clearfix">
+                  <img src="{% static "img/"%}{{ post.foto1 }}" alt="">
+                  <h4><a href="/noticias/{{ post.id }}">{{ post.title }}</a></h4>
+                  <time datetime="2020-01-01">{{ post.published_date }}</time>
+                </div>
+                  {% endfor %}
+
+
+
+              </div><!-- End sidebar recent posts-->
+
+              <h3 class="sidebar-title">Etiquetas</h3>
+              <div class="sidebar-item tags">
+                <!--<ul>
+                  <li><a href="#">App</a></li>
+                  <li><a href="#">IT</a></li>
+                  <li><a href="#">Business</a></li>
+                  <li><a href="#">Mac</a></li>
+                  <li><a href="#">Design</a></li>
+                  <li><a href="#">Office</a></li>
+                  <li><a href="#">Creative</a></li>
+                  <li><a href="#">Studio</a></li>
+                  <li><a href="#">Smart</a></li>
+                  <li><a href="#">Tips</a></li>
+                  <li><a href="#">Marketing</a></li>
+                </ul>-->
+              </div><!-- End sidebar tags-->
+
+            </div><!-- End sidebar -->
+
+          </div><!-- End blog sidebar -->
+
+        </div>
+
+      </div>
+    </section><!-- End Blog Section -->
+
+  </main><!-- End #main -->
+{% include "footer.html" %}
