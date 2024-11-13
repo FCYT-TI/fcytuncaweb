@@ -1,4 +1,9 @@
-from django.shortcuts import render, redirect
+from django.http import HttpResponse
+from django.shortcuts import render, get_object_or_404, redirect
+from .models import *
+import random
+from django.core.paginator import Paginator
+
 
 # Create your views here.
 def index(request):
@@ -37,3 +42,21 @@ def pasantias(request):
 
 def reglamento_investigacion(request):
     return render(request, 'reglamento_investigacion.html')
+
+
+
+
+def blog (request):
+    posts = Post.objects.all().order_by('-published_date')
+    paginator = Paginator(posts, 3)
+    page = request.GET.get('page')
+    paginator_posts = paginator.get_page(page)
+    posts = Post.objects.all().order_by('-published_date')[0:6]
+    contexto = {"posts_pagin": paginator_posts, "posts": posts}
+    return render(request, 'noticia.html', contexto)
+
+def single_blog(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    posts = Post.objects.all().order_by('-published_date')[0:6]
+    contexto = {"post": post, "posts":posts}
+    return render(request, 'detalle_noticia.html', contexto)

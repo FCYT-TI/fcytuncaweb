@@ -16,7 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from fcytuncaweb import views
-
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,9 +30,11 @@ urlpatterns = [
     path('resolucion/', views.resolucion),
     path('bienestar_estudiantil/', views.bienestar_estudiantil),
     path('misionvision/', views.misionVision),
-path('identidad/', views.pagdeidentidad),
+    path('identidad/', views.pagdeidentidad),
     path('reglamento_investigacion/', views.reglamento_investigacion),
-
     path('pasantia/', views.pasantias),
+    path('noticias/', views.blog),
+    path('noticias/<slug:pk>', views.single_blog, name='single_blog'),
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
-]
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
