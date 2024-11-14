@@ -41,5 +41,8 @@ def reglamento_investigacion(request):
 def calendario(request):
     return render(request, 'calendario.html')
 
+def electronica(request):
+    return render(request, 'carreraElectronica.html')
+
 def carreraInfor(request):
     return render(request, 'carreraInformatica.html')
