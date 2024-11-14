@@ -3697,3 +3697,7 @@ display: block;
 .parrafo_electronica{
   text-align: justify;
 }
+
+.hablilidad_list{
+    list-style-type: none;
+}

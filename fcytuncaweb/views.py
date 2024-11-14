@@ -46,3 +46,6 @@ def electronica(request):
 
 def carreraInfor(request):
     return render(request, 'carreraInformatica.html')
+
+def civil(request):
+    return render(request, 'carreraCivil.html')
