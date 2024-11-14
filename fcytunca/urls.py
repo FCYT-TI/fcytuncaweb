@@ -35,4 +35,6 @@ urlpatterns = [
     path('calendario/', views.calendario),
     path('electronica/', views.electronica),
     path('informatica/', views.carreraInfor),
+
+    path('repositorio_institucional/', views.repositorio),
 ]
