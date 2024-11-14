@@ -34,4 +34,5 @@ urlpatterns = [
     path('pasantia/', views.pasantias),
     path('calendario/', views.calendario),
     path('electronica/', views.electronica),
+    path('informatica/', views.carreraInfor),
 ]

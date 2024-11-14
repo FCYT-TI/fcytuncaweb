@@ -3630,8 +3630,9 @@ display: block;
   margin: 0 !important;
 }
 
-/*Eletronica*/
+/*Carreras*/
 
+/*Informatica*/
 .objetivosDeCarreara{
   background:#006fdd;
   color:#fff;
@@ -3685,6 +3686,11 @@ display: block;
 
 .autoridades{
   text-align: center;
+  padding: 20px;
+}
+
+.acreditacion{
+  border-radius: 40px 0 40px 40px;
   padding: 20px;
 }
 

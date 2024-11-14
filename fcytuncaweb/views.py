@@ -43,3 +43,6 @@ def calendario(request):
 
 def electronica(request):
     return render(request, 'carreraElectronica.html')
+
+def carreraInfor(request):
+    return render(request, 'carreraInformatica.html')
