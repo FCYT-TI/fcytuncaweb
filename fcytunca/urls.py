@@ -33,4 +33,5 @@ urlpatterns = [
     path('reglamento_investigacion/', views.reglamento_investigacion),
     path('pasantia/', views.pasantias),
     path('calendario/', views.calendario),
+    path('informatica/', views.carreraInfor),
 ]

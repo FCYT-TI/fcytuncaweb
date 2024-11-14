@@ -3629,3 +3629,65 @@ display: block;
 .ulPasantia{
   margin: 0 !important;
 }
+
+/*Informatica*/
+.objetivosDeCarreara{
+  background:#006fdd;
+  color:#fff;
+  border-radius: 40px 0 40px 40px;
+  padding: 50px;
+  margin: 0;
+}
+
+.titulacion{
+  margin-top: 50px;
+  border-radius: 40px 0 40px 40px;
+  padding: 30px;
+}
+.planymalla{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.habilidades{
+  background:#006fdd;
+  color:#fff;
+  border-radius: 40px 40px 40px 0;
+  padding: 30px;
+}
+
+.habilidades-custom{
+  padding: 7px 7px 7px 30px !important;
+  text-align: justify;
+}
+
+.perfil{
+  text-align: justify;
+  padding: 50px;
+  list-style-type: none;
+}
+
+
+#habilidades-item{
+  text-align: left;
+}
+
+#check-habilidad{
+  color: #006fdd;
+}
+
+.director_carrera{
+  text-align: justify;
+}
+
+.autoridades{
+  text-align: center;
+  padding: 20px;
+}
+
+.acreditacion{
+  border-radius: 40px 0 40px 40px;
+  padding: 20px;
+}
