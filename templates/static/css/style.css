@@ -3630,6 +3630,8 @@ display: block;
   margin: 0 !important;
 }
 
+/*Eletronica*/
+
 .objetivosDeCarreara{
   background:#006fdd;
   color:#fff;
@@ -3640,8 +3642,6 @@ display: block;
 
 .titulacion{
   margin-top: 50px;
-  /*background-color: #006fdd;*/
-  /*color:#fff;*/
   border-radius: 40px 0 40px 40px;
   padding: 30px;
 }
@@ -3670,9 +3670,6 @@ display: block;
   list-style-type: none;
 }
 
-.perfil-item{
-  /*padding-left: 10px;*/
-}
 
 #habilidades-item{
   text-align: left;
@@ -3689,4 +3686,8 @@ display: block;
 .autoridades{
   text-align: center;
   padding: 20px;
+}
+
+.parrafo_electronica{
+  text-align: justify;
 }
