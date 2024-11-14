@@ -104,7 +104,8 @@ section {
 }
 @media (max-width: 992px) {
   .breadcrumbs {
-    margin-top: 57px;
+    /*margin-top: 57px;*/
+     margin-left: 15%;
   }
 }
 
@@ -2734,7 +2735,11 @@ padding: 20px 30px 20px 30px;
   width: 65%;
   text-align: justify;
 }
-
+@media (max-width: 992px) {
+    .container-titulo{
+  margin-left: 15%; /*responsive del titulo*/
+}
+}
 /*--------------------------------------------------------------
 # Tables
 --------------------------------------------------------------*/
@@ -3089,6 +3094,40 @@ display: block;
   opacity: 1;
   transform: translateY(0);
 }
+/*Responsive-pagdeidentidad*/
+@media (max-width: 992px) {
+  .containerlogoFCytIdentidad-img,
+  .containerisologoinst-img,
+  .containersecurityredutc-img,
+  .containercolorimetria-img,
+  .containerapliccorrect-img,
+  .containertipografia-img,
+  .containerrestric-img,
+  .containerconstrucymodu-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .containersecurityredutc-img {
+    max-width: 550px;
+  }
+
+  .containercolorimetria-img {
+    max-width: 550px;
+  }
+
+  .containerapliccorrect-img {
+    max-width: 350px;
+  }
+
+  .containertipografia-img,
+  .containerrestric-img,
+  containerlogoFCytIdentidad-img,
+  .containerconstrucymodu-img {
+    max-width: 450px;
+  }
+}
+
 
 
 
@@ -3258,6 +3297,97 @@ display: block;
 }
  .team .member .member-info p.consejo-contenido {
   font-style: normal;
+}
+
+ @media (max-width: 768px) {
+    .team .member .member-info h4 {
+        font-size: 20px;
+    }
+
+    .member-info span {
+        font-size: 16px;
+    }
+
+    .member-info p {
+        font-size: 14px;
+    }
+
+    .member-img {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .member {
+        width: 100%;
+        margin: 5px auto;
+        min-width: 200px;
+    }
+}
+@media (max-width: 576px) {
+    .team .member .member-info h4 {
+        font-size: 18px;
+    }
+
+    .member-info span {
+        font-size: 14px;
+    }
+
+    .member-info p {
+        font-size: 12px;
+    }
+
+    .member-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .member {
+        width: 100%;
+        margin: 5px auto;
+        min-width: 150px;
+        padding: 10px;
+    }
+}
+@media (max-width: 400px) {
+    .team .member .member-info h4 {
+        font-size: 16px;
+    }
+
+    .member-info span {
+        font-size: 12px;
+    }
+
+    .member-info p {
+        font-size: 10px;
+    }
+
+    .member-img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .member {
+        width: 100%;
+        margin: 5px auto;
+        min-width: 100px;
+        padding: 5px;
+
+    }
+
+    .social a {
+        font-size: 12px;
+        margin: 0 5px;
+    }
+    .team .member .member-info p {
+    font-style: italic;
+              font-size: 8px;
+
+    padding-top: 7px;
+    line-height: 12px;
+}
+    .team .member .member-info span{
+                    font-size: 10px;
+
+    }
 }
 
 .custom-testimonial{
@@ -3618,6 +3748,53 @@ display: block;
 }
 
 
+@media (max-width: 768px) {
+  .calendar__body {
+    flex-direction: column;
+    width: 100%;
+    max-height: none;
+  }
+  .calendar .days .active{
+    font-size: 1rem;
+  }
+  .calendar .days .today {
+  font-size: 1rem;
+}
+
+  .left, .right {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  .today-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+  .date-input {
+    margin-bottom: 5px;
+  }
+  .right .today-date{
+  padding-left: 0px;
+}
+  .events{
+    padding-left: 25px;
+  }
+}
+
+
+
+
 
 /* Pasantias */
 .Pasantiacontainer{
@@ -3635,3 +3812,6 @@ display: block;
     margin-left: 0 !important;
   }
 }
+
+
+
