@@ -4,22 +4,22 @@
 # General
 --------------------------------------------------------------*/
 :root {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
 }
 
 a {
-  color: #006fdd;
-  text-decoration: none;
+    color: #006fdd;
+    text-decoration: none;
 }
 
 a:hover {
-  color: #006fdd;
-  text-decoration: none;
+    color: #006fdd;
+    text-decoration: none;
 }
 
 h1,
@@ -28,15 +28,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat SemiBold", sans-serif;
+    font-family: "Montserrat SemiBold", sans-serif;
 }
 /*Main section*/
-.main{
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  margin: auto;
-  justify-content: center;
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
 }
 /*--------------------------------------------------------------
 # Sections
@@ -225,148 +225,148 @@ section {
 * Desktop Navigation 
 */
 .navbar {
-  padding: 0;
+    padding: 0;
 }
 
 .navbar ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
 }
 
 .navbar li {
-  position: relative;
+    position: relative;
 }
 
 .navbar a,
 .navbar a:focus {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  color: black;
-  white-space: nowrap;
-  transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: black;
+    white-space: nowrap;
+    transition: 0.3s;
 }
 
 .navbar a i,
 .navbar a:focus i {
-  font-size: 12px;
-  line-height: 0;
-  margin-left: 5px;
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
 }
 
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
-  color: #006fdd;
+.navbar li:hover > a {
+    color: #006fdd;
 }
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #006fdd;
-  padding: 8px 20px;
-  margin-left: 30px;
-  border-radius: 4px;
-  color: #fff;
+    background: #006fdd;
+    padding: 8px 20px;
+    margin-left: 30px;
+    border-radius: 4px;
+    color: #fff;
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  color: #fff;
-  background: #006fdd;
+    color: #fff;
+    background: #006fdd;
 }
 
 .navbar .dropdown ul {
-  display: block;
-  position: absolute;
-  left: 14px;
-  top: calc(100% + 30px);
-  margin: 0;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.3s;
-  border-radius: 4px;
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    border-radius: 4px;
 }
 
 .navbar .dropdown ul li {
-  min-width: 200px;
+    min-width: 200px;
 }
 
 .navbar .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 15px;
-  text-transform: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: none;
 }
 
 .navbar .dropdown ul a i {
-  font-size: 12px;
+    font-size: 12px;
 }
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
-  color: #006fdd;
+.navbar .dropdown ul li:hover > a {
+    color: #006fdd;
 }
 
-.navbar .dropdown:hover>ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
+.navbar .dropdown:hover > ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
 }
 
 .navbar .megamenu {
-  position: static;
+    position: static;
 }
 
 .navbar .megamenu ul {
-  margin-top: 5px;
-  right: 0;
-  padding: 10px;
-  display: flex;
+    margin-top: 5px;
+    right: 0;
+    padding: 10px;
+    display: flex;
 }
 
 .navbar .megamenu ul li {
-  flex: 1;
+    flex: 1;
 }
 
 .navbar .megamenu ul li a,
-.navbar .megamenu ul li:hover>a {
-  color: #013289;
+.navbar .megamenu ul li:hover > a {
+    color: #013289;
 }
 
 .navbar .megamenu ul li a:hover,
 .navbar .megamenu ul li .active,
 .navbar .megamenu ul li .active:hover {
-  color: #006fdd;
+    color: #006fdd;
 }
 
 .navbar .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-  visibility: hidden;
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
+.navbar .dropdown .dropdown:hover > ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
 }
 
 @media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
+    .navbar .dropdown .dropdown ul {
+        left: -90%;
+    }
 
   .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
@@ -650,9 +650,9 @@ section {
   font-size: 10px;
 }
 
-.about .btn-read-more i {
-  font-size: 12px;
-}
+    .about .btn-read-more i {
+        font-size: 12px;
+    }
 
 
 }
@@ -3415,34 +3415,230 @@ display: block;
   padding: 30px
 }
 
-.custom-testimonial-items p{
-  font-style: normal !important;
-  padding: 20px;
+.custom-testimonial-items p {
+    font-style: normal !important;
+    padding: 20px;
 }
 
-.custom-testimonial-items{
-  padding: 0 !important;
-  border-radius: 40px 40px 0 0 !important;
+.custom-testimonial-items {
+    padding: 0 !important;
+    border-radius: 40px 40px 0 0 !important;
 }
 
-.valores-custom{
-  padding: 7px 7px 7px 30px !important;
+.valores-custom {
+    padding: 7px 7px 7px 30px !important;
 }
 
- .centertitle {
-   text-align:center;
- }
+.centertitle {
+    text-align: center;
+}
 
 /* Pasantias */
-.Pasantiacontainer{
-  margin: 0;
+.Pasantiacontainer {
+    margin: 0;
 }
-#pricingPasantia{
-  overflow: visible;
+
+#pricingPasantia {
+    overflow: visible;
 }
-.ulPasantia{
-  margin: 0 !important;
+
+.ulPasantia {
+    margin: 0 !important;
 }
+
+/* ================= TRANSPARENCIA LEY ================= */
+
+.transparencyContainer {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    border: 1px solid darkgray;
+    padding: 20px 10px;
+    align-items: center;
+    margin-top: 15px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 1px rgba(205, 205, 205, 0.8);
+    font-size: 18px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.transparencyContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #006fdd;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: inherit;
+    transition: transform 0.4s ease;
+}
+
+.transparencyContainer.active {
+    background: #006fdd;
+    color: white;
+}
+
+.transparencyContainer.active .transparencyTitle {
+    transform: translateX(15px);
+}
+
+.transparencyContainer:hover::before {
+    transform: scaleX(1);
+}
+
+.transparencyContainer:hover .transparencyTitle {
+    transform: translateX(15px);
+}
+
+.transparencyContainer:hover .transparencyTitle {
+    color: white;
+}
+
+.transparencyTitle {
+    transition: transform 0.5s ease, color 0.8s ease;
+}
+
+.listTransparency {
+    margin: 0 !important;
+}
+
+.listTransparency li {
+    font-size: 18px;
+    transition: transform 0.2s ease-in-out;
+    transform-origin: top left;
+}
+
+.listTransparency li:hover {
+    transform: scale(1.05);
+}
+
+/*===== Direccion Telefonos y Dependencias ======== */
+.containerTelDep {
+    margin: auto;
+    width: 70%;
+    text-align: center;
+}
+
+.direccionTelTitle {
+    color: white;
+}
+
+.direccionTelContainer {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    border: 1px solid darkgray;
+    padding: 20px 10px;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px 10px 0 0;
+    background: #006fdd;
+    color: white;
+}
+
+.direcTelBody {
+    padding: 10px 20px;
+    border: 1px solid #bfbfbf;
+    border-radius: 0 0 10px 10px;
+    height: 100%;
+}
+
+.containerDireccionTel {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
+.columnDirection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.direcCard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+@media (max-width: 1100px) {
+    .containerDireccionTel {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 850px) {
+    .columnDirection {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+    }
+}
+
+@media (max-width: 630px) {
+    .transparencyContainer .transparencyTitle {
+        font-size: 12px !important;
+    }
+
+    .listTransparency {
+        font-size: 12px !important;
+    }
+
+    #containerTransparency {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .direccionTelContainer {
+        font-size: 16px;
+    }
+
+    .funName {
+        font-size: 16px !important;
+    }
+
+    .transparencyContainer:hover .transparencyTitle {
+        transform: translateX(5px);
+    }
+
+    .transparencyContainer.active .transparencyTitle {
+        transform: translateX(5px);
+    }
+    .transparencyContainer{
+        padding: 20px 20px;
+    }
+}
+
+/* ========== Tabla de Transparencia ========== */
+.table__bodyTransparencia {
+    padding: 0;
+    max-height: 500px;
+    width: 75%;
+    margin: .8rem auto;
+    overflow: auto;
+}
+
+.table__body th {
+    text-align: center;
+}
+
+.transparencyTableYear {
+    color: #006fdd;
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Calendar

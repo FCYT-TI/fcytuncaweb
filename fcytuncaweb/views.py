@@ -38,6 +38,15 @@ def pasantias(request):
 def reglamento_investigacion(request):
     return render(request, 'reglamento_investigacion.html')
 
+def transparencialey(request):
+    return render(request, 'transparencialey.html')
+
+def direccion_telefono_dependencias(request):
+    return render(request, 'direccionytel_dependencias.html')
+
+def funcionarios_anho(request):
+    return render(request, 'funcionarios_anho.html')
+
 def calendario(request):
     return render(request, 'calendario.html')
 
