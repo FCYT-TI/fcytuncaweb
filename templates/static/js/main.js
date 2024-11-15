@@ -13,6 +13,27 @@
       return document.querySelector(el)
     }
   }
+document.addEventListener('DOMContentLoaded', function() {
+  // Seleccionamos todos los elementos `.transparencyContainer`
+  const transparencyContainers = document.querySelectorAll('.transparencyContainer');
+
+  transparencyContainers.forEach(container => {
+    container.addEventListener('click', function(event) {
+      // Esperamos un poco para asegurarnos de que `aria-expanded` ya se haya actualizado
+      setTimeout(() => {
+        // Verificamos si el enlace está expandido o colapsado
+        const isExpanded = container.getAttribute('aria-expanded') === 'true';
+
+        // Agregamos o removemos la clase 'active' en función del estado de `aria-expanded`
+        if (isExpanded) {
+          container.classList.add('active');
+        } else {
+          container.classList.remove('active');
+        }
+      }, 100); // Retardo suficiente para asegurarse de que `aria-expanded` se actualice correctamente
+    });
+  });
+});
 
   /**
    * Easy event listener function
@@ -303,18 +324,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
     clearInterval(intervalId);
     startInterval();
   }
-
-  carouselBottonNext.addEventListener('click', function(){
+ if (carouselBottonNext){
+     carouselBottonNext.addEventListener('click', function(){
       showNextImage();
       resetInterval();
     });
-  carouselBottonPrevius.addEventListener('click', function(){
+ }
+if (carouselBottonPrevius){
+    carouselBottonPrevius.addEventListener('click', function(){
     showPreviusImage();
     resetInterval();
-  })
+  });
+
+}
 
   function showPreviusImage(){
-    if(currentIndex == 0){
+    if(currentIndex === 0 && images) {
       images[currentIndex].classList.remove('active');
       currentIndex = images.length-1;
       console.log(currentIndex);
@@ -332,7 +357,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
       images[currentIndex].classList.add('active'); // Muestra la siguiente imagen
   }
   // Inicializa el carrusel mostrando la primera imagen
-  images[currentIndex].classList.add('active');
+  if (images.length !== 0){
+    images[currentIndex].classList.add('active');
+  }
 
   // Cambia la imagen cada 3 segundos
   startInterval();

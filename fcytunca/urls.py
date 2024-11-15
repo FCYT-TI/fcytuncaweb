@@ -31,7 +31,13 @@ urlpatterns = [
     path('misionvision/', views.misionVision),
 path('identidad/', views.pagdeidentidad),
     path('reglamento_investigacion/', views.reglamento_investigacion),
-
     path('pasantia/', views.pasantias),
+    path('transparencia_ley/', views.transparencialey),
+    path('transparencia_ley/direccion_telefono_dependencias/', views.direccion_telefono_dependencias),
+    path('transparencia_ley/funcionarios_año/', views.funcionarios_anho),
+    path('transparencia_ley/vacancias/', views.vacancias),
+    path('transparencia_ley/declaracion_jurada/', views.declaracion_jurada),
+    path('transparencia_ley/presupuesto_ingreso/', views.presupuesto_ingreso),
+
 
 ]
