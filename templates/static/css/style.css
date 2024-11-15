@@ -3428,6 +3428,22 @@ display: block;
 .valores-custom {
     padding: 7px 7px 7px 30px !important;
 }
+@media (max-width: 700px) {
+    .valores-custom{
+        padding: 15px 15px 15px 15px !important;
+    }
+    .habilidades-custom{
+        padding: 2px 2px 2px 2px !important;
+        font-size: 14px;
+    }
+    #habilidades-item{
+        text-align: center !important;
+    }
+    .colhabilidades{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 .centertitle {
     text-align: center;
@@ -4028,6 +4044,7 @@ display: block;
   margin-top: 50px;
   border-radius: 40px 0 40px 40px;
   padding: 30px;
+    text-align: center;
 }
 .planymalla{
     display: flex;
@@ -4044,7 +4061,7 @@ display: block;
 }
 
 .habilidades-custom{
-  padding: 7px 7px 7px 30px !important;
+  padding: 7px 7px 7px 30px;
   text-align: justify;
 }
 
@@ -4052,6 +4069,11 @@ display: block;
   text-align: justify;
   padding: 50px;
   list-style-type: none;
+}
+@media (max-width: 768px) {
+    .perfil{
+        padding: 30px !important;
+    }
 }
 
 
@@ -4089,4 +4111,16 @@ display: block;
   .titulacion_item {
     margin-bottom: 20px;
   }
+}
+@media (max-width: 600px) {
+    #containerMision{
+        width: 80% !important;
+    }
+    #valores_row{
+        display: flex;
+        flex-direction: column;
+    }
+    #containerInfor{
+        width: 80% !important;
+    }
 }
