@@ -58,3 +58,6 @@ def carreraInfor(request):
 
 def electricidad(request):
     return render(request, 'carreraElectricidad.html')
+
+def repositorio(request):
+    return render(request, 'repositorio.html')

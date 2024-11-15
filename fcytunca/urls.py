@@ -39,4 +39,6 @@ urlpatterns = [
     path('electronica/', views.electronica),
     path('informatica/', views.carreraInfor),
     path('electricidad/', views.electricidad),
+
+    path('repositorio_institucional/', views.repositorio),
 ]
