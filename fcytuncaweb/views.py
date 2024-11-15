@@ -52,3 +52,5 @@ def electricidad(request):
 
 def repositorio(request):
     return render(request, 'repositorio.html')
+def civil(request):
+    return render(request, 'carreraCivil.html')
