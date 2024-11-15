@@ -38,6 +38,7 @@ urlpatterns = [
     path('calendario/', views.calendario),
     path('electronica/', views.electronica),
     path('informatica/', views.carreraInfor),
+    path('civil/', views.civil),
     path('electricidad/', views.electricidad),
 
     path('repositorio_institucional/', views.repositorio),

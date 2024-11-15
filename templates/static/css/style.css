@@ -4080,3 +4080,13 @@ display: block;
 .parrafo_electronica{
   text-align: justify;
 }
+
+.hablilidad_list{
+    list-style-type: none;
+}
+
+@media (max-width: 768px) {
+  .titulacion_item {
+    margin-bottom: 20px;
+  }
+}
