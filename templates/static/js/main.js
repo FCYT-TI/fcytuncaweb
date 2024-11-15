@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -237,7 +237,7 @@ let navbarlinks = select('#navbar .scrollto', true)
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfokio-lightbox'
@@ -303,7 +303,7 @@ let navbarlinks = select('#navbar .scrollto', true)
   });
 
   /**
-   * Initiate Pure Counter 
+   * Initiate Pure Counter
    */
   new PureCounter();
 
@@ -507,23 +507,25 @@ const tableRows = document.querySelectorAll("tbody tr");
 const tableHeadings = document.querySelectorAll("thead th");
 
 // Función para manejar la búsqueda en la tabla
-search.addEventListener("input", function () {
-  const searchData = search.value.toLowerCase();
+if (search){
+    search.addEventListener("input", function () {
+    const searchData = search.value.toLowerCase();
 
-  tableRows.forEach((row, i) => {
-    const rowData = row.textContent.toLowerCase();
-    const isVisible = rowData.indexOf(searchData) >= 0;
+    tableRows.forEach((row, i) => {
+      const rowData = row.textContent.toLowerCase();
+      const isVisible = rowData.indexOf(searchData) >= 0;
 
-    row.classList.toggle("hide", !isVisible);
-    row.style.setProperty("--delay", `${i / 25}s`);
+      row.classList.toggle("hide", !isVisible);
+      row.style.setProperty("--delay", `${i / 25}s`);
+    });
+
+    // Alternar color de fondo para las filas visibles
+    const visibleRows = document.querySelectorAll("tbody tr:not(.hide)");
+    visibleRows.forEach((visibleRow, i) => {
+      visibleRow.style.backgroundColor = i % 2 === 0 ? "transparent" : "#0000000b";
+    });
   });
-
-  // Alternar color de fondo para las filas visibles
-  const visibleRows = document.querySelectorAll("tbody tr:not(.hide)");
-  visibleRows.forEach((visibleRow, i) => {
-    visibleRow.style.backgroundColor = i % 2 === 0 ? "transparent" : "#0000000b";
-  });
-});
+}
 
 // Función para manejar la ordenación de columnas
 tableHeadings.forEach((heading, index) => {
@@ -563,3 +565,242 @@ function sortTable(columnIndex, sortAsc) {
   const tableBody = document.querySelector("tbody");
   sortedRows.forEach((row) => tableBody.appendChild(row));
 }
+// Selección de elementos del DOM
+const calendar = document.querySelector(".calendar"),
+    date = document.querySelector(".date"),
+    todayBtn = document.querySelector(".today-btn"),
+    daysContainer = document.querySelector(".days"),
+    prev = document.querySelector(".prev"),
+    next = document.querySelector(".next"),
+    gotoBtn = document.querySelector(".goto-btn"),
+    dateInput = document.querySelector(".date-input"),
+    eventDay = document.querySelector(".event-day"),
+    eventDate = document.querySelector(".event-date"),
+    eventsContainer = document.querySelector(".events");
+
+let today = new Date(),
+    month = today.getMonth(),
+    year = today.getFullYear(),
+    activeDay;
+
+const months = [
+    "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+    "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+];
+
+const eventsArr = [
+    // Enero
+    { day: 1, month: 1, year: 2024, events: [{ title: "Feriado Año Nuevo", time: "" }] },
+    { day: 29, month: 1, year: 2024, events: [{ title: "Últimos días de inscripción para el examen de admisión", time: "" }] },
+    { day: 30, month: 1, year: 2024, events: [{ title: "Últimos días de inscripción para el examen de admisión", time: "" }] },
+
+    // Febrero
+    { day: 1, month: 2, year: 2024, events: [{ title: "Inicio de clases", time: "" }] },
+    { day: 26, month: 2, year: 2024, events: [{ title: "Inicio Matriculación Académica y Administrativa", time: "" },] },
+    { day: 26, month: 2, year: 2024, events: [{ title: "Inicio de Recepción de Documentos para Beneficiarios Ley N° 6628/2020", time: "" }] },
+
+    // Marzo
+    { day: 1, month: 3, year: 2024, events: [{ title: "Feriado Nacional Día de los Héroes", time: "" }] },
+    { day: 18, month: 3, year: 2024, events: [{ title: "Fecha límite para Entrega de Plan Semestral", time: "" }] },
+    { day: 22, month: 3, year: 2024, events: [{ title: "Fin Matriculación Académica", time: "" },] },
+    { day: 22, month: 3, year: 2024, events: [{ title: "Fin recepción de documentos para el registro de beneficiarios Ley N°6628/2020", time: "" }] },
+    { day: 25, month: 3, year: 2024, events: [{ title: "Inicio 1era. Evaluación Parcial", time: "" }] },
+    { day: 28, month: 3, year: 2024, events: [{ title: "Jueves Santo", time: "" }] },
+    { day: 29, month: 3, year: 2024, events: [{ title: "Viernes Santo", time: "" }] },
+
+    // Abril
+    { day: 3, month: 4, year: 2024, events: [{ title: "Publicación Nómina de Beneficiarios Ley N° 6628/2020", time: "" }] },
+    { day: 8, month: 4, year: 2024, events: [{ title: "Fin Periodo de Pago Ordinario Matriculación Administrativa", time: "" }] },
+    { day: 9, month: 4, year: 2024, events: [{ title: "Inicio Periodo de Pago Extraordinario Matriculación Administrativa", time: "" }] },
+    { day: 19, month: 4, year: 2024, events: [{ title: "Fin 1era. Evaluación Parcial", time: "" }] },
+    { day: 30, month: 4, year: 2024, events: [{ title: "Asueto Institucional Día del Maestro", time: "" }] },
+
+    // Mayo
+    { day: 1, month: 5, year: 2024, events: [{ title: "Feriado Nacional - Día del trabajador", time: "" }] },
+    { day: 2, month: 5, year: 2024, events: [{ title: "Inicio Periodo de 3era. Evaluación Final 2023-2", time: "" }] },
+    { day: 4, month: 5, year: 2024, events: [{ title: "Asueto Universitario - Aniversario Fundacional UNCA", time: "" }] },
+    { day: 14, month: 5, year: 2024, events: [{ title: "Día de la Madre", time: "" }] },
+    { day: 14, month: 5, year: 2024, events: [{ title: "Feriado Nacional - Independencia Nacional", time: "" },] },
+    { day: 20, month: 5, year: 2024, events: [{ title: "Inicio 2da. Evaluación Parcial", time: "" }] },
+
+    // Junio
+    { day: 10, month: 6, year: 2024, events: [{ title: "Traslado de Feriado Nacional - Paz del Chaco", time: "" }] },
+    { day: 14, month: 6, year: 2024, events: [{ title: "Fin - Desarrollo de Clases 1er. Periodo 2024", time: "" },] },
+    { day: 14, month: 6, year: 2024, events: [{ title: "Fin 2da. Evaluación Parcial", time: "" }] },
+    { day: 17, month: 6, year: 2024, events: [{ title: "Socialización de planilla de procesos y entrega de planillas a secretaria académica.", time: "" }] },
+
+    // Julio
+    { day: 1, month: 7, year: 2024, events: [{ title: "Inicio 1era. Evaluación Final - Periodo 2024/1", time: "" }] },
+    { day: 26, month: 7, year: 2024, events: [{ title: "Fin 1era. Evaluación Final Periodo 2024/2", time: "" }] },
+
+    // Agosto
+    { day: 1, month: 8, year: 2024, events: [{ title: "Inicio Periodo de Clases 2024/2", time: "" },] },
+    { day: 1, month: 8, year: 2024, events: [{ title: "Inicio Matriculación Académica y Administrativa 2024/2", time: "" }] },
+    { day: 5, month: 8, year: 2024, events: [{ title: "Inicio Periodo de 2da. Evaluación Final 2024/1", time: "" }] },
+    { day: 15, month: 8, year: 2024, events: [{ title: "Feriado Nacional - Fundación de Asunción", time: "" }] },
+    { day: 19, month: 8, year: 2024, events: [{ title: "Fecha límite para Entrega de Plan Semestral", time: "" }] },
+
+    // Septiembre
+    { day: 2, month: 9, year: 2024, events: [{ title: "Inicio 1era. Evaluación Parcial", time: "" }] },
+    { day: 13, month: 9, year: 2024, events: [{ title: "Fin Matriculación Académica", time: "" },] },
+    { day: 13, month: 9, year: 2024, events: [{ title: "Fin Periodo de Pago Ordinario Matriculación Administrativa", time: "" }] },
+
+    { day: 16, month: 9, year: 2024, events: [{ title: "Inicio Periodo de Pago Extraordinario Matriculación Administrativa", time: "" }] },
+    { day: 20, month: 9, year: 2024, events: [{ title: "Asueto Institucional Día de la Juventud", time: "" }] },
+    { day: 23, month: 9, year: 2024, events: [{ title: "Fin Periodo de Pago Extraordinario Matriculación Administrativa", time: "" }] },
+    { day: 27, month: 9, year: 2024, events: [{ title: "Fin 1era. Evaluación Parcial", time: "" }] },
+    { day: 29, month: 9, year: 2024, events: [{ title: "Feriado Nacional - Batalla de Boquerón", time: "" }] },
+
+    // Octubre
+    { day: 1, month: 10, year: 2024, events: [{ title: "Inicio Periodo 3era. Evaluación Final 2024/1", time: "" }] },
+    { day: 7, month: 10, year: 2024, events: [{ title: "Asueto Distrital - Fundación de Coronel Oviedo", time: "" }] },
+    { day: 21, month: 10, year: 2024, events: [{ title: "Inicio 2da. Evaluación Parcial", time: "" }] },
+
+    // Noviembre
+    { day: 1, month: 11, year: 2024, events: [{ title: "Inicio Periodo de 1era. Evaluación Final 2024/2", time: "" }] },
+    { day: 12, month: 11, year: 2024, events: [{ title: "Fin 2da. Evaluación Parcial", time: "" }] },
+    { day: 12, month: 11, year: 2024, events: [{ title: "Fin Desarrollo de Clases", time: "" }] },
+
+    { day: 13, month: 11, year: 2024, events: [{ title: "Inicio Actividades en conmemoración al aniversario Fundacional de la FCyT", time: "" }] },
+    { day: 17, month: 11, year: 2024, events: [{ title: "Aniversario Fundación FCyT", time: "" }] },
+    { day: 18, month: 11, year: 2024, events: [{ title: "Socialización de Planillas de Procesos y Entrega de Planillas a la Secretaria Académica", time: "" }] },
+    { day: 27, month: 11, year: 2024, events: [{ title: "Inicio Periodo 1era. Evaluación Final 2024/2", time: "" }] },
+
+    // Diciembre
+    { day: 8, month: 12, year: 2024, events: [{ title: "Feriado Nacional - Festividad de Caacupé", time: "" }] },
+    { day: 23, month: 12, year: 2024, events: [{ title: "Fin 1era. Evaluación Final Periodo 2024/2", time: "" }] },
+    { day: 25, month: 12, year: 2024, events: [{ title: "Feriado Nacional - Navidad", time: "" }] },
+];
+
+
+// Inicializa el calendario
+function initCalendar() {
+    const firstDay = new Date(year, month, 1),
+        lastDay = new Date(year, month + 1, 0),
+        prevLastDay = new Date(year, month, 0),
+        prevDays = prevLastDay.getDate(),
+        lastDate = lastDay.getDate(),
+        day = firstDay.getDay(),
+        nextDays = 7 - lastDay.getDay() - 1;
+
+    date.textContent = `${months[month]} ${year}`;
+    let days = "";
+
+    // Días del mes anterior
+    for (let x = day; x > 0; x--) {
+        days += `<div class="day prev-date">${prevDays - x + 1}</div>`;
+    }
+
+    // Días del mes actual
+    for (let i = 1; i <= lastDate; i++) {
+        const isToday = i === today.getDate() && month === today.getMonth() && year === today.getFullYear();
+        const hasEvent = eventsArr.some(event => event.day === i && event.month === month + 1 && event.year === year);
+        const dayClass = isToday ? "today active" : "";
+        const eventClass = hasEvent ? "event" : "";
+
+        if (isToday) {
+            activeDay = i;
+            getActiveDay(i);
+            updateEvents(i);
+        }
+
+        days += `<div class="day ${dayClass} ${eventClass}">${i}</div>`;
+    }
+
+    // Días del próximo mes
+    for (let j = 1; j <= nextDays; j++) {
+        days += `<div class="day next-date">${j}</div>`;
+    }
+
+    daysContainer.innerHTML = days;
+    addListeners();
+}
+
+// Cambia al mes anterior
+function prevMonth() {
+    month = (month === 0) ? 11 : month - 1;
+    initCalendar();
+}
+
+// Cambia al mes siguiente
+function nextMonth() {
+    month = (month === 11) ? 0 : month + 1;
+    initCalendar();
+}
+
+// Navega a una fecha específica
+function gotoDate() {
+    const [monthInput, yearInput] = dateInput.value.split("/").map(Number);
+    if (monthInput > 0 && monthInput <= 12 && yearInput === today.getFullYear()) {
+        month = monthInput - 1;
+        year = yearInput;
+        initCalendar();
+    } else {
+        alert("Fecha inválida");
+    }
+}
+
+// Muestra la información del día seleccionado
+function getActiveDay(date) {
+    const day = new Date(year, month, date);
+    eventDay.textContent = day.toLocaleString("es-ES", {weekday: "short"});
+    eventDate.textContent = `${date} ${months[month]} ${year}`;
+}
+
+// Actualiza la lista de eventos para el día seleccionado
+function updateEvents(date) {
+    const events = eventsArr.filter(event =>
+        event.day === date && event.month === month + 1 && event.year === year
+    );
+
+    eventsContainer.innerHTML = events.length ? events.map(event => `
+        <div class="event">
+            <div class="title"><i class="fas fa-circle"></i><h3 class="event-title">${event.events[0].title}</h3></div>
+            <div class="event-time">${event.events[0].time || ""}</div>
+        </div>`).join("") : `<div class="no-event"><h3>No hay eventos</h3></div>`;
+}
+
+// Agrega listeners para los días del calendario
+function addListeners() {
+    document.querySelectorAll(".day").forEach(day => {
+        day.addEventListener("click", e => {
+            const clickedDay = Number(e.target.textContent);
+            if (e.target.classList.contains("prev-date")) prevMonth();
+            else if (e.target.classList.contains("next-date")) nextMonth();
+            else {
+                activeDay = clickedDay;
+                getActiveDay(clickedDay);
+                updateEvents(clickedDay);
+                document.querySelectorAll(".day").forEach(d => d.classList.remove("active"));
+                e.target.classList.add("active");
+            }
+        });
+    });
+}
+
+// Listeners para botones de navegación
+prev.addEventListener("click", prevMonth);
+next.addEventListener("click", nextMonth);
+todayBtn.addEventListener("click", () => {
+    today = new Date();
+    month = today.getMonth();
+    year = today.getFullYear();
+    initCalendar();
+});
+gotoBtn.addEventListener("click", gotoDate);
+
+// Inicializar el calendario al cargar la página
+initCalendar();
+
+// Manejo de la entrada del campo de fecha
+dateInput.addEventListener("input", e => {
+    let value = dateInput.value.replace(/[^0-9]/g, "");
+    if (value.length > 2) {
+        value = value.slice(0, 2) + "/" + value.slice(2);
+    }
+    if (value.length > 7) {
+        value = value.slice(0, 7);
+    }
+    dateInput.value = value;
+});
+

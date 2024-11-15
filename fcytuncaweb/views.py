@@ -40,13 +40,21 @@ def reglamento_investigacion(request):
 
 def transparencialey(request):
     return render(request, 'transparencialey.html')
+
 def direccion_telefono_dependencias(request):
     return render(request, 'direccionytel_dependencias.html')
+
 def funcionarios_anho(request):
     return render(request, 'funcionarios_anho.html')
-def vacancias(request):
-    return render(request, 'vacancias.html')
-def declaracion_jurada(request):
-    return render(request, 'declaracion_jurada.html')
-def presupuesto_ingreso(request):
-    return render(request, 'presupuesto_ingreso.html')
+
+def calendario(request):
+    return render(request, 'calendario.html')
+
+def electronica(request):
+    return render(request, 'carreraElectronica.html')
+
+def carreraInfor(request):
+    return render(request, 'carreraInformatica.html')
+
+def electricidad(request):
+    return render(request, 'carreraElectricidad.html')
